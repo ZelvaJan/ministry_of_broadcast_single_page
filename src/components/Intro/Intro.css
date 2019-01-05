@@ -41,3 +41,9 @@
         margin-right: 0;
     }
 }
+
+@media (max-height: 600px) {
+    .Intro_root {
+        padding-top: 75vh;
+    }
+}
