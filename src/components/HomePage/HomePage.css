@@ -1,0 +1,103 @@
+.HomePage_root {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    min-height: 600px;
+    background-color: #dee2cb;
+    overflow-x: hidden;
+    /*border: solid red 1px;*/
+}
+
+.HomePage_background_wall {
+    position: absolute;
+    width: 100%;
+    height: 360px;
+    bottom: 230px;
+    background: url("../../assets/bg_wall.png") repeat-x left bottom;
+}
+
+.HomePage_background_snow {
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    bottom: 0;
+    background-color: #f6f9e8;
+}
+
+.HomePage_bg_poster {
+    width: 84px;
+    height: 124px;
+    position: absolute;
+    bottom: 250px;
+    left: 208px;
+    background: url("../../assets/poster.png") no-repeat center center;
+}
+
+.HomePage_bg_board {
+    width: 144px;
+    height: 160px;
+    position: absolute;
+    bottom: 130px;
+    left: 20%;
+    background: url("../../assets/board.png") no-repeat center center;
+}
+
+@media (max-width: 1000px) {
+    .HomePage_bg_board {
+        display: none;
+    }
+}
+
+.HomePage_bg_tower {
+    width: 216px;
+    height: 408px;
+    position: absolute;
+    bottom: 120px;
+    right: 100px;
+    background: url("../../assets/guard_tower.png") no-repeat center center;
+}
+
+@media (max-width: 1000px) {
+    .HomePage_bg_tower {
+        display: none;
+    }
+}
+
+.HomePage_snow_cleaner {
+    position: absolute;
+    bottom: 215px;
+    left: 50%;
+    height: auto !important;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transform: scale(3);
+}
+
+.HomePage_snow_cleaner.flip {
+    transform: scaleX(-3) scaleY(3);
+}
+
+.HomePage_release_wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.HomePage_release_time {
+    color: #1d3f53 ;
+    font-size: 18px;
+    font-family: 'SequelNeue', Arial, serif;
+    margin-bottom: 15px;
+}
+
+.HomePage_release_platforms img {
+    height: 30px;
+    width: auto;
+    margin: 5px 20px;
+    fill: #1d3f53;
+}

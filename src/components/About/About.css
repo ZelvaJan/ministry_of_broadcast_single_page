@@ -1,0 +1,107 @@
+.About_root {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    /*border: 1px solid blue;*/
+}
+
+.About_preTitle {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: right;
+    color: #d13715;
+    padding-bottom: 24px;
+}
+
+.About_responsive_layout {
+    flex: 1 1 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.About_title {
+    color: #d13715;
+    font-family: 'SequelLight', 'Open Sans', serif;
+    font-size: 80px;
+    padding: 0 10px;
+}
+
+.About_title_whitespace {
+    height: 1px;
+    flex: 1 1 30px;
+    max-width: 60px;
+}
+
+.About_text {
+    flex: 1 1 280px;
+    max-width: 900px;
+    padding-right: 45px;
+    margin: 50px 20px 30px;
+    line-height: 30px;
+}
+
+.About_subscribe_wrapper {
+    margin: 80px 10px 30px;
+    padding: 29px 0;
+    position: relative;
+}
+
+.About_subscribe_crow {
+    position: absolute;
+    top: -22px;
+    right: 60px;
+    height: auto !important;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transform: scale(4);
+}
+
+.About_subscribe_button {
+    font-family: 'SequelNeue', Arial, serif;
+    background: transparent;
+    border: 4px solid #1d3f53;
+    color: #1d3f53;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 25px 50px;
+    margin-right: 45px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.About_subscribe_button:hover, .About_subscribe_button:active {
+    color: white;
+    border: 4px solid #d13715;
+    background-color: #d13715;
+}
+
+@media (max-width: 500px) {
+    .About_subscribe_button {
+        padding: 20px 10px;
+        font-size: 14px;
+    }
+    .About_subscribe_crow {
+        transform: scale(3);
+        top: -11px;
+    }
+
+    .About_preTitle {
+        padding-bottom: 14px;
+    }
+    .About_title {
+        font-size: 50px;
+    }
+    .About_text {
+        margin: 30px 10px 30px;
+    }
+}

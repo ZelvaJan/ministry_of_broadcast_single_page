@@ -1,0 +1,112 @@
+.Gallery_root {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 250px;
+    /*border: 1px solid green;*/
+}
+
+.Gallery_content {
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Gallery_texts {
+    position: absolute;
+    pointer-events: none;
+}
+
+.Gallery_preTitle {
+    writing-mode: tb-rl;
+    transform: rotate(-180deg);
+    text-align: right;
+    color: #d13715;
+    padding-bottom: 24px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.Gallery_title {
+    color: #d13715;
+    font-family: 'SequelLight', 'Open Sans', serif;
+    font-size: 80px;
+    padding: 0 10px;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.Gallery_arrow {
+    color: #d13715;
+    font-size: 80px;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out 0s;
+    z-index: 1;
+    pointer-events: auto;
+    max-height: 100px;
+    line-height: 58px;
+}
+
+.Gallery_arrow:hover {
+    color: #1d3f53;
+
+}
+
+.Gallery_free_space {
+    flex: 1;
+}
+
+.Gallery_slider_wrapper {
+    width: 100%;
+    max-height: 85vh;
+    margin: 185px 0 30px 0;
+    transform: translateY(-130px);
+}
+
+/* Flix gallery hot fix - https://github.com/akiran/react-slick/issues/1241*/
+.slick-track {
+    display: flex
+}
+
+.Gallery_item {
+    padding: 10px 40px;
+    max-height: 70vh;
+    max-width: 90vw;
+    width: auto !important;
+    object-fit: contain;
+}
+
+@media (max-width: 800px) {
+    .Gallery_slider_wrapper {
+        margin-top: 220px;
+    }
+    .Gallery_item {
+        padding: 10px 10px;
+    }
+}
+
+@media (max-width: 500px) {
+    .Gallery_slider_wrapper {
+        margin-top: 182px;
+    }
+    .Gallery_preTitle {
+        padding-bottom: 14px;
+    }
+    .Gallery_title {
+        font-size: 50px;
+        padding-right: 0;
+    }
+    .Gallery_arrow {
+        font-size: 50px;
+        max-height: 60px;
+        line-height: 30px;
+    }
+}

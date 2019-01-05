@@ -1,0 +1,80 @@
+.Logo_root {
+    position: fixed;
+    top: 50vh;
+    transform: translateY(-50%);
+    left: auto;
+    z-index: 999999;
+    transition: all 600ms ease-in-out 0s;
+}
+
+.Logo_root.LogoUp {
+    top: -50px;
+    transform: scale(0.6);
+}
+
+.Logo_wrapper {
+    position: relative;
+    height: 250px;
+    width: 250px;
+    text-align: center;
+}
+
+.Logo_eye {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Logo_eye_ribbon_right {
+    position: absolute;
+    top: 96px;
+    left: 150px;
+}
+.Logo_eye_ribbon_left {
+    position: absolute;
+    top: 96px;
+    right: 150px;
+    transform: scaleX(-1);
+}
+
+.Logo_eye_left_title {
+    position: absolute;
+    top: 96px;
+    right: 230px;
+    opacity: 0;
+    transition: all 1000ms ease-in-out 0s;
+}
+
+.Logo_eye_right_title {
+    position: absolute;
+    top: 96px;
+    left: 230px;
+    opacity: 0;
+    transition: all 1000ms ease-in-out 0s;
+}
+
+.Logo_eye_left_title.visible, .Logo_eye_right_title.visible {
+    opacity: 1;
+}
+
+@media (max-width: 1000px) {
+    .Logo_root.LogoUp {
+        top: -55px;
+        transform: scale(0.55);
+    }
+}
+
+@media (max-width: 520px) {
+    .Intro_root {
+        padding-top: 70vh;
+    }
+    .Logo_root {
+        top: 125px;
+    }
+    .Logo_root.LogoUp {
+        top: -75px;
+        transform: scale(0.35);
+    }
+}

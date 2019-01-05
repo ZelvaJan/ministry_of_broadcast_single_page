@@ -1,0 +1,70 @@
+/* Fonts initialization*/
+@font-face {
+    font-family: 'SequelNeue';
+    src: url('fonts/Neue/Sequel-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Neue/Sequel-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Neue/Sequel-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/Neue/Sequel-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/Neue/Sequel-Neue.otf')  format('opentype') /* Safari, Android, iOS */
+}
+
+@font-face {
+    font-family: 'SequelLight';
+    src: url('fonts/Light/Sequel-Regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/Light/Sequel-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('fonts/Light/Sequel-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('fonts/Light/Sequel-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+    url('fonts/Light/Sequel-Light.otf')  format('opentype') /* Safari, Android, iOS */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+button, input {
+    font-family: 'SequelNeue', 'Arial', -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+#root, .App {
+    width: 100%;
+    height: 100%;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+#Snow_canvas {
+    position: fixed;
+    pointer-events:none;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.Content_wrapper {
+    display: flex;
+    max-width: 1250px;
+    width: 100%;
+    z-index: 1;
+}

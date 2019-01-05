@@ -1,0 +1,182 @@
+.MainPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f6f9e8;
+    padding-bottom: 8px;
+}
+
+.MainPage_trailer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background: url("../assets/bg_tile.png") repeat;
+}
+.MainPage_trailer_bg_circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0)) center center;
+}
+
+.videoContainer__video {
+    position: absolute;
+    top: 15%;
+    left: 10%;
+    width: 80%;
+    height: 75%;
+}
+
+.MainPage_awards {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: auto;
+    background: #0f191c;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    background: url("../assets/bg_tile.png") repeat;
+}
+.MainPage_awards_bg_circle {
+    position: absolute;
+    width: 100%;
+    /*height: 100%;*/
+    background: radial-gradient(rgba(255, 255, 255, 0.10), rgba(255, 255, 255, 0)) center center;
+}
+
+.MaiPage_awards_list {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin-top: 175px;
+    align-items: center;
+    justify-content: center;
+}
+
+.MaiPage_awards_list div {
+    margin: 20px;
+    flex: 1 1 140px;
+    max-width: 300px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.MaiPage_awards_list img {
+    width: 250px;
+    height: 168px;
+}
+
+.MainPage_trailer_button {
+    position: fixed;
+    top: 52px;
+    right: 18px;
+    background: transparent;
+    border: 4px solid #1d3f53;
+    color: #1d3f53;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 130px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    z-index: 9999;
+}
+
+.MainPage_awards_button {
+    position: fixed;
+    top: 52px;
+    right: 170px;
+    background: transparent;
+    border: 4px solid #1d3f53;
+    color: #1d3f53;
+    font-size: 16px;
+    text-transform: uppercase;
+    padding: 10px 0;
+    width: 50px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    z-index: 9999;
+}
+
+.MainPage_trailer_button:hover, .MainPage_trailer_button:active,
+.MainPage_awards_button:hover, .MainPage_awards_button:active {
+    color: white;
+    border: 4px solid #d13715;
+    background-color: #d13715;
+}
+
+.MainPage_trailer_button.white, .MainPage_awards_button.white {
+    border: 4px solid #f6f9e8;
+    color: #f6f9e8;
+}
+
+.MainPage_trailer_button.small {
+    width: 50px;
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .MainPage_awards_button {
+        right: 80px;
+    }
+
+    .MainPage_trailer_button {
+        display: none;
+    }
+    .MainPage_trailer_button.small {
+        display: block;
+    }
+}
+
+@media (max-width: 1000px) {
+    .MainPage_awards_button {
+        top: 48px;
+        right: 80px;
+    }
+
+    .MainPage_trailer_button {
+        display: none;
+    }
+    .MainPage_trailer_button.small {
+        top: 48px;
+        display: block;
+    }
+}
+
+@media (max-width: 870px) {
+    .MaiPage_awards_list {
+        margin-top: 105px;
+    }
+}
+
+@media (max-width: 800px) {
+    .MainPage_awards_button {
+        top: 100px;
+        right: 80px;
+    }
+    .MainPage_trailer_button.small {
+        top: 100px;
+    }
+}
+
+@media (max-width: 520px) {
+    .MainPage_awards_button {
+        top: 80px;
+        left: 20px;
+    }
+    .MainPage_trailer_button.small {
+        top: 80px;
+    }
+}

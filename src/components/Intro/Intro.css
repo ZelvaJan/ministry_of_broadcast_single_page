@@ -1,0 +1,43 @@
+.Intro_root {
+    padding-top: 50vh;
+    background-color: #dee2cb;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Intro_section {
+    height: 600px;
+    max-width: 320px;
+    color: #1d3f53;
+}
+
+.Intro_section_right {
+    margin-left: 540px;
+    text-align: left;
+}
+
+.Intro_section_left {
+    margin-right: 540px;
+    text-align: right;
+}
+
+.Intro_text {
+    margin: 0;
+    transform: translateY(-50%);
+    font-family: 'SequelNeue', Arial, serif;
+    font-size: 20px;
+    padding: 0 20px;
+    overflow: hidden;
+}
+
+@media (max-width: 860px) {
+    .Intro_section_right {
+        margin-left: 0;
+    }
+
+    .Intro_section_left {
+        margin-right: 0;
+    }
+}
