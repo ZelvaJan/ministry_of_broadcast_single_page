@@ -1,7 +1,6 @@
 .Logo_root {
     position: fixed;
-    top: 50vh;
-    transform: translateY(-50%);
+    top: calc(50vh - 125px);
     left: auto;
     z-index: 999999;
     transition: all 600ms ease-in-out 0s;
@@ -60,21 +59,26 @@
 }
 
 @media (max-width: 1000px) {
+    .Logo_root {
+        top: 0;
+    }
     .Logo_root.LogoUp {
-        top: -55px;
-        transform: scale(0.55);
+        top: -55px !important;
+        transform: scale(0.55) !important;
     }
 }
 
 @media (max-width: 520px) {
-    .Intro_root {
-        padding-top: 70vh;
-    }
-    .Logo_root {
-        top: 125px;
-    }
     .Logo_root.LogoUp {
-        top: -75px;
-        transform: scale(0.35);
+        top: -75px !important;
+        transform: scale(0.35) !important;
     }
 }
+
+@media (max-height: 600px) {
+    .Logo_root {
+        top: -30px;
+        transform: scale(0.8);
+    }
+}
+

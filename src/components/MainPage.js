@@ -48,7 +48,20 @@ class MainPage extends Component {
     constructor() {
         super();
 
+        let isAlreadyLoaded = false;
+        if (typeof window !== 'undefined') {
+            window.onload = () => {
+                console.log("Page Loaded");
+                window.scrollTo(0, 0);
+                this.setState({isLoaded: true});
+            }
+        } else {
+            console.error("Window is missing");
+            isAlreadyLoaded = true;
+        }
+
         this.state = {
+            isLoaded: isAlreadyLoaded,
             page: EPage.HomePage,
             introEnded: false, // TODO don't skip intro => false
             logoUp: false,
@@ -116,7 +129,7 @@ class MainPage extends Component {
                         window.scrollTo(0, 0);
 
                         this.forceScrollTimer = null;
-                        this.setState({introEnded: true});
+                        this.setState({introEnded: true, logoUp: true});
                     }, animDuration);
                 }
             }
@@ -171,8 +184,10 @@ class MainPage extends Component {
     };
 
     render() {
+        const isVisible = this.state.isLoaded ? 'visible' : 'hidden';
+
         return (
-            <div className='MainPage'>
+            <div className='MainPage' style={{visibility: isVisible}}>
                 <h1 className='hidden'>Ministry of Broadcast - The Wall Show</h1>
                 <h2 className='hidden'>brought by TwinPetes s.r.o.</h2>
 
