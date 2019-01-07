@@ -1,0 +1,277 @@
+.PressKit_root {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: auto;
+    z-index: 99999999;
+    background-color: rgba(255, 255, 255, 0.6);
+
+}
+
+.PressKit {
+    min-height: 100vh;
+    margin: 80px auto;
+    background: #fefff9;
+    width: 95%;
+    padding: 20px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+
+.PressKit_eye {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+}
+
+.PressKit_root h3 {
+    padding: 0;
+    margin: 0 0 15px;
+    color: #1d3f53;
+    font-size: 20px;
+}
+
+.PressKit_root h4 {
+    color: #1d3f53;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.PressKit_root p {
+    color: #1d3f53;
+    font-size: 16px;
+    margin: 4px 0;
+}
+
+.PressKit_root a {
+    color: #d13715;
+    text-decoration: none;
+}
+
+.PressKit_root a:hover {
+    color: #7d200e;
+    text-decoration: underline;
+}
+
+.PressKit_content {
+    border: 2px solid #4b5a5f;
+}
+
+.PressKit_box {
+    border: 2px solid #4b5a5f;
+    display: inline-block;
+    padding: 20px;
+}
+
+.PressKit_header {
+    display: block;
+    text-align: center;
+    padding-top: 70px;
+    position: relative;
+}
+
+.PressKit_title {
+    font-family: 'SequelNeue', Arial, serif;
+    font-size: 30px;
+    color: #1d3f53;
+    margin-bottom: 5px;
+}
+
+.PressKit_subtitle {
+    font-size: 20px !important;
+    color: #d13715 !important;
+    font-weight: bold !important;
+    margin-top: 5px !important;
+}
+
+.PressKit_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.PressKit_section_column {
+    flex: 1 1 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex_h {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex_v {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex_1 {
+    flex: 1 1;
+}
+
+.just_center {
+    justify-content: center;
+}
+
+.margin_small {
+    margin: 5px;
+}
+
+/***********************************************/
+/************* Custom *****************/
+.PressKit_content_wrapper {
+    flex: 1 1 192px;
+}
+.PressKit_factSheet_wrapper {
+    flex: 100 1 280px;
+}
+.PressKit_factSheet_list div{
+    padding: 0 30px 20px 0;
+}
+
+.PressKit_factSheet_list p {
+    margin: 0;
+}
+
+.PressKit_story_text {
+    max-width: 1100px;
+}
+
+
+.PressKit_creativeDir {
+    flex: 200 1 300px;
+}
+.PressKit_logo_wrapper, .PressKit_icon_wrapper {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+
+}
+.PressKit_logo_wrapper {
+    flex: 100 1 300px;
+}
+.PressKit_logo, .PressKit_icon {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.PressKit_logo img {
+    max-width: 100%;
+}
+.PressKit_icon img {
+    max-width: 100%;
+    max-height: 150px;
+}
+
+.PressKit_trailer_wrapper {
+    flex: 1;
+}
+.PressKit_trailer {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 800px;
+}
+.PressKit_online_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.PressKit_online_list a {
+    margin: 0 50px 10px 0;
+}
+.PressKit_images_list {
+    display: flex;
+    flex-wrap: wrap;
+}
+.PressKit_image {
+    max-height: 140px;
+    width: auto;
+    margin: 0 10px 10px 0;
+    max-width: 100%;
+}
+
+.PressKit_team {
+    flex: 3 1 280px;
+}
+.PressKit_awards {
+    flex: 1 1 280px;
+}
+.PressKit_articles_wrapper {
+    flex: 2 1 280px;
+    display: flex;
+    flex-direction: column;
+}
+.PressKit_team h4, .PressKit_awards h4 {
+    margin: 20px 0 5px 0;
+}
+.PressKit_team h5 {
+    color: #d13715;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+.PressKit_team p {
+    margin: 0;
+}
+
+.PressKit_download {
+    padding: 0 !important;
+    display: flex;
+}
+.PressKit_download a {
+    flex: 1;
+    height: 100%;
+    font-family: 'SequelNeue', Arial, serif;
+    background: transparent;
+    color: #1d3f53;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+.PressKit_download a:hover, .PressKit_download a:active {
+    color: white;
+    background-color: #d13715;
+}
+
+.PressKit_close_button {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    font-family: 'SequelNeue', Arial, serif;
+    background: transparent;
+    border: 4px solid #1d3f53;
+    color: #1d3f53;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50px;
+    height: 50px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    text-decoration: none;
+}
+.PressKit_close_button:hover, .PressKit_close_button:active {
+    color: white;
+    border: 4px solid #d13715;
+    background-color: #d13715;
+}

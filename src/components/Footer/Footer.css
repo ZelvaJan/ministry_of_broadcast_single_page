@@ -21,27 +21,28 @@
 }
 .Footer_subscribe_title {
     margin-top: 5px;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'SequelNeue', Arial, serif;
 }
 
 .Footer_links {
     margin: 15px;
     flex: 1 1 150px;
-    font-size: 14px;
+    font-size: 16px;
     display: flex;
     flex-direction: column;
     font-family: 'SequelNeue', Arial, serif;
 }
 
-.Footer_links a {
+.Footer_links a, .Footer_links p{
     text-decoration: none;
     color: #f6f9e8;
     margin: 5px 0;
 }
 
-.Footer_links a:hover {
+.Footer_links a:hover, .Footer_links p:hover {
     color: #d13715;
+    cursor: pointer;
 }
 
 /**** Social *****************************************************/
@@ -52,7 +53,7 @@
 .Footer_social_title {
     padding-left: 3px;
     margin: 5px 0 5px 0;
-    font-size: 14px;
+    font-size: 16px;
     font-family: 'SequelNeue', Arial, serif;
 }
 

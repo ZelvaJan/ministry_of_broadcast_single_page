@@ -3,10 +3,6 @@ import './Intro.css';
 
 class Intro extends Component {
 
-    componentDidMount() {
-        //this.animateText();
-    }
-
     render() {
 
         return (

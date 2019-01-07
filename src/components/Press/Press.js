@@ -14,9 +14,14 @@ import asBehance from '../../assets/logos/Behance.svg';
 import as80lvl from '../../assets/logos/80.LVL.svg';
 import {EPage} from "../MainPage";
 import SpriteSheet from "../utils/Spritesheet";
+import PropTypes from "prop-types";
 
 
 class Press extends Component {
+
+    static propTypes = {
+        showPressKit: PropTypes.func.isRequired
+    };
 
     render() {
 
@@ -84,8 +89,13 @@ class Press extends Component {
                                          }}
                                          className='Press_wishList_crow'/>
                             <button className='Press_wishList_button'
-                                onMouseEnter={() => {if (this.crowSheet) this.crowSheet.goToAndPlay(0)}}
-                                onMouseOut={() => {if (this.crowSheet) this.crowSheet.goToAndPause(0)}}
+                                    onClick={this.props.showPressKit}
+                                    onMouseEnter={() => {
+                                        if (this.crowSheet) this.crowSheet.goToAndPlay(0)
+                                    }}
+                                    onMouseOut={() => {
+                                        if (this.crowSheet) this.crowSheet.goToAndPause(0)
+                                    }}
                             >
                                 VIEW THE PRESS KIT
                             </button>

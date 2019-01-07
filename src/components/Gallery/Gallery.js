@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Gallery.css';
 import Slider from "react-slick";
+import {EPage} from "../MainPage";
 
 import img1 from '../../assets/gallery/1.png';
 import img2 from '../../assets/gallery/2.png';
@@ -12,7 +13,10 @@ import img6 from '../../assets/gallery/6.png';
 import img7 from '../../assets/gallery/7.png';
 import img8 from '../../assets/gallery/8.jpg';
 import img9 from '../../assets/gallery/9.png';
-import {EPage} from "../MainPage";
+import img20 from '../../assets/gallery/20.jpg';
+import basecampGif from '../../assets/gallery/basecamp.gif';
+import figure from '../../assets/gallery/figure.jpg';
+
 
 class Gallery extends Component {
 
@@ -59,6 +63,7 @@ class Gallery extends Component {
                     </section>
                     <div className='Gallery_slider_wrapper'>
                         <Slider ref={slider => (this.slider = slider)} {...Gallery.settings}>
+                            {Gallery.renderGalleryCard(basecampGif)}
                             {Gallery.renderGalleryCard(img1)}
                             {Gallery.renderGalleryCard(img2)}
                             {Gallery.renderGalleryCard(img3)}
@@ -69,6 +74,8 @@ class Gallery extends Component {
                             {Gallery.renderGalleryCard(img7)}
                             {Gallery.renderGalleryCard(img8)}
                             {Gallery.renderGalleryCard(img9)}
+                            {Gallery.renderGalleryCard(img20)}
+                            {Gallery.renderGalleryCard(figure)}
                         </Slider>
                     </div>
                 </div>

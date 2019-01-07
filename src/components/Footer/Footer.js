@@ -8,8 +8,13 @@ import asTwitter from '../../assets/logos/Social_Twitter.svg';
 import asTwitterActive from '../../assets/logos/Social_Twitter_active.svg';
 import asSteam from '../../assets/logos/Social_Steam.svg';
 import asSteamActive from '../../assets/logos/Social_Steam_active.svg';
+import PropTypes from "prop-types";
 
 class Footer extends Component {
+
+    static propTypes = {
+        showPressKit: PropTypes.func.isRequired
+    };
 
     constructor() {
         super();
@@ -60,7 +65,7 @@ class Footer extends Component {
                     <div className='Footer_links'>
                         <a href="TODO" target='_blank' rel="noopener noreferrer">GET IN TOUCH</a>
                         <a href="TODO" target='_blank' rel="noopener noreferrer">DEV BLOG</a>
-                        <a href="TODO" target='_blank' rel="noopener noreferrer">PRESS KIT</a>
+                        <p href='' onClick={this.props.showPressKit}>PRESS KIT</p>
                         <a href="TODO" target='_blank' rel="noopener noreferrer">FAQ</a>
                     </div>
                     <div className='Footer_social'>

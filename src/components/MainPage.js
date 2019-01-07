@@ -21,6 +21,7 @@ import award7 from '../assets/awards/7.svg';
 import award8 from '../assets/awards/8.svg';
 import Logo from "./Logo/Logo";
 import {handleErrors} from "../App";
+import PressKit from "./PressKit/PressKit";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -66,7 +67,8 @@ class MainPage extends Component {
             introEnded: false, // TODO don't skip intro => false
             logoUp: false,
             isTrailerVisible: false,
-            isAwardsVisible: false
+            isAwardsVisible: false,
+            isPressKitOpen: false
         };
 
         this.forceScrollTimer = null;
@@ -183,6 +185,23 @@ class MainPage extends Component {
         this.setState({isAwardsVisible: false})
     };
 
+    showPressKit = () => {
+        try {
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
+        } catch (e) {
+            handleErrors(e);
+        }
+        this.setState({isPressKitOpen: true})
+    };
+    hidePressKit = () => {
+        try {
+            document.getElementsByTagName("body")[0].style.overflow = "auto"
+        } catch (e) {
+            handleErrors(e);
+        }
+        this.setState({isPressKitOpen: false})
+    };
+
     render() {
         const isVisible = this.state.isLoaded ? 'visible' : 'hidden';
 
@@ -191,16 +210,21 @@ class MainPage extends Component {
                 <h1 className='hidden'>Ministry of Broadcast - The Wall Show</h1>
                 <h2 className='hidden'>brought by TwinPetes s.r.o.</h2>
 
-                <Logo
-                    introEnded={this.state.introEnded}
-                    logoUp={this.state.logoUp}
-                />
+                {this.state.isPressKitOpen
+                    ? null
+                    : <Logo
+                        introEnded={this.state.introEnded}
+                        logoUp={this.state.logoUp}
+                    />
+                }
 
                 {this.state.introEnded
-                    ? <NavigationBar
-                        activePage={this.state.page}
-                        changePage={this.changePage}
-                    />
+                    ? !this.state.isPressKitOpen
+                        ? <NavigationBar
+                            activePage={this.state.page}
+                            changePage={this.changePage}
+                        />
+                        : null
                     : <Intro/>
                 }
 
@@ -222,8 +246,12 @@ class MainPage extends Component {
                 <HomePage/>
                 <About/>
                 <Gallery/>
-                <Press/>
-                <Footer/>
+                <Press
+                    showPressKit={this.showPressKit}
+                />
+                <Footer
+                    showPressKit={this.showPressKit}
+                />
 
                 {this.renderModals()}
             </div>
@@ -265,6 +293,10 @@ class MainPage extends Component {
                     </div>
                 </div>
             )
+        } else if (this.state.isPressKitOpen) {
+            return <PressKit
+                hidePressKit={this.hidePressKit}
+            />
         }
     }
 
