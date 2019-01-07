@@ -22,6 +22,7 @@ import award8 from '../assets/awards/8.svg';
 import Logo from "./Logo/Logo";
 import {handleErrors} from "../App";
 import PressKit from "./PressKit/PressKit";
+import PropTypes from "prop-types";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -46,25 +47,16 @@ const animDuration = 2000;
 
 class MainPage extends Component {
 
+    static propTypes = {
+        isLoaded: PropTypes.bool.isRequired
+    };
+
     constructor() {
         super();
 
-        let isAlreadyLoaded = false;
-        if (typeof window !== 'undefined') {
-            window.onload = () => {
-                console.log("Page Loaded");
-                window.scrollTo(0, 0);
-                this.setState({isLoaded: true});
-            }
-        } else {
-            console.error("Window is missing");
-            isAlreadyLoaded = true;
-        }
-
         this.state = {
-            isLoaded: isAlreadyLoaded,
             page: EPage.HomePage,
-            introEnded: false, // TODO don't skip intro => false
+            introEnded: false,
             logoUp: false,
             isTrailerVisible: false,
             isAwardsVisible: false,
@@ -86,6 +78,7 @@ class MainPage extends Component {
     }
 
     onContentScroll = (event) => {
+        console.warn("Scroll: ", event);
         event.preventDefault();
         const scrollTop = window.scrollY;
 
@@ -203,7 +196,7 @@ class MainPage extends Component {
     };
 
     render() {
-        const isVisible = this.state.isLoaded ? 'visible' : 'hidden';
+        const isVisible = this.props.isLoaded ? 'visible' : 'hidden';
 
         return (
             <div className='MainPage' style={{visibility: isVisible}}>

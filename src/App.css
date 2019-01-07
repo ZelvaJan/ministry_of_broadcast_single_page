@@ -1,37 +1,58 @@
-.App {
+.App_thankYou_wrapper {
+    width: 100%;
+    height: 100%;
     text-align: center;
-    overflow: hidden;
-}
-
-.App-logo {
-    animation: App-logo-spin infinite 20s linear;
-    height: 40vmin;
-}
-
-.App-header {
-    background-color: #282c34;
-    min-height: 100vh;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+    flex-direction: column;
+    color: #1d3f53;
 }
 
-.App-link {
-    color: #61dafb;
+.App_thankYou_wrapper h2 {
+    font-size: 28px;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+.App_thankYou_logo {
+    width: 95%;
+    max-height: 50%;
+    max-width: 800px;
 }
 
-.bold {
+.App_button_wrapper {
+    display: inline-block;
+    margin: 70px 60px;
+    position: relative;
+}
+
+.App_button_crow {
+    position: absolute;
+    top: -18px;
+    right: 16px;
+    height: auto !important;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+    transform: scale(3);
+}
+
+.App_button {
+    background: transparent;
+    border: 4px solid #1d3f53;
+    color: #1d3f53;
+    font-size: 16px;
     font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    transition: all 200ms ease-in-out 0s;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+}
+
+.App_button:hover, .App_button:active {
+    color: white;
+    border: 4px solid #d13715;
+    background-color: #d13715;
 }

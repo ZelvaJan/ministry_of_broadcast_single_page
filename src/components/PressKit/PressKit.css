@@ -16,7 +16,7 @@
     background: #fefff9;
     width: 95%;
     padding: 20px;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 .PressKit_eye {
@@ -129,10 +129,12 @@
 .PressKit_content_wrapper {
     flex: 1 1 192px;
 }
+
 .PressKit_factSheet_wrapper {
     flex: 100 1 280px;
 }
-.PressKit_factSheet_list div{
+
+.PressKit_factSheet_list div {
     padding: 0 30px 20px 0;
 }
 
@@ -144,29 +146,34 @@
     max-width: 1100px;
 }
 
-
 .PressKit_creativeDir {
     flex: 200 1 300px;
 }
+
 .PressKit_logo_wrapper, .PressKit_icon_wrapper {
     flex: 1 1 300px;
     display: flex;
     flex-direction: column;
 
 }
+
 .PressKit_logo_wrapper {
     flex: 100 1 300px;
 }
+
 .PressKit_logo, .PressKit_icon {
     width: 100%;
     flex: 1;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
+
 .PressKit_logo img {
     max-width: 100%;
 }
+
 .PressKit_icon img {
     max-width: 100%;
     max-height: 150px;
@@ -174,51 +181,118 @@
 
 .PressKit_trailer_wrapper {
     flex: 1;
+    transition: all 200ms ease-in-out 0s;
+    filter: grayscale(100%);
+    cursor: pointer;
 }
+
+.PressKit_trailer_wrapper:hover {
+    filter: none;
+}
+
+.PressKit_trailer_overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    background: url(
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATklEQVQoU2NkYGAwZmBgOMuAACA+CKCIMSIpADGRNaEYgKwQ3WQUjTCF6CYhWw2WAynEpgjmIpg7jUlSiM0TWK2GWUOUZ7ApxggeogIcABHJFtftKVfJAAAAAElFTkSuQmCC
+    ) repeat;
+    opacity: 1;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.PressKit_trailer_wrapper:hover .PressKit_trailer_overlay {
+    opacity: 0;
+}
+
 .PressKit_trailer {
     width: 100%;
     height: 100%;
     max-width: 800px;
     max-height: 800px;
+    cursor: pointer;
 }
+
 .PressKit_online_list {
     display: flex;
     flex-wrap: wrap;
 }
+
 .PressKit_online_list a {
     margin: 0 50px 10px 0;
 }
+
 .PressKit_images_list {
     display: flex;
     flex-wrap: wrap;
 }
+
+.PressKit_image_wrapper {
+    position: relative;
+    cursor: pointer;
+}
+
 .PressKit_image {
+    position: relative;
     max-height: 140px;
     width: auto;
     margin: 0 10px 10px 0;
     max-width: 100%;
+    display: block;
+    filter: grayscale(100%);
+    transition: all 200ms ease-in-out 0s;
+}
+
+.PressKit_image_overlay {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 10px;
+    bottom: 10px;
+    left: 0;
+    background: url(
+    data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATklEQVQoU2NkYGAwZmBgOMuAACA+CKCIMSIpADGRNaEYgKwQ3WQUjTCF6CYhWw2WAynEpgjmIpg7jUlSiM0TWK2GWUOUZ7ApxggeogIcABHJFtftKVfJAAAAAElFTkSuQmCC
+    ) repeat;
+    opacity: 1;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.PressKit_image_wrapper:hover .PressKit_image {
+    filter: none;
+}
+
+.PressKit_image_wrapper:hover .PressKit_image_overlay {
+    opacity: 0;
 }
 
 .PressKit_team {
     flex: 3 1 280px;
 }
+
 .PressKit_awards {
     flex: 1 1 280px;
 }
+
 .PressKit_articles_wrapper {
     flex: 2 1 280px;
     display: flex;
     flex-direction: column;
 }
+
 .PressKit_team h4, .PressKit_awards h4 {
     margin: 20px 0 5px 0;
 }
+
 .PressKit_team h5 {
     color: #d13715;
     font-size: 16px;
     font-weight: bold;
     margin: 0;
 }
+
 .PressKit_team p {
     margin: 0;
 }
@@ -227,6 +301,7 @@
     padding: 0 !important;
     display: flex;
 }
+
 .PressKit_download a {
     flex: 1;
     height: 100%;
@@ -245,7 +320,9 @@
     outline: none;
     text-decoration: none;
 }
+
 .PressKit_download a:hover, .PressKit_download a:active {
+    text-decoration: none;
     color: white;
     background-color: #d13715;
 }
@@ -270,6 +347,7 @@
     outline: none;
     text-decoration: none;
 }
+
 .PressKit_close_button:hover, .PressKit_close_button:active {
     color: white;
     border: 4px solid #d13715;

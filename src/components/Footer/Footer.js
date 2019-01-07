@@ -63,10 +63,10 @@ class Footer extends Component {
                         </div>
                     </div>
                     <div className='Footer_links'>
-                        <a href="TODO" target='_blank' rel="noopener noreferrer">GET IN TOUCH</a>
-                        <a href="TODO" target='_blank' rel="noopener noreferrer">DEV BLOG</a>
-                        <p href='' onClick={this.props.showPressKit}>PRESS KIT</p>
-                        <a href="TODO" target='_blank' rel="noopener noreferrer">FAQ</a>
+                        <a href="mailto:info@ministryofbroadcast.com?subject=MinistryOfBroadcast - Get in touch"
+                           target='_blank' rel="noopener noreferrer">GET IN TOUCH</a>
+                        <a href="https://twinpetes.com/" target='_blank' rel="noopener noreferrer">DEV BLOG</a>
+                        <p onClick={this.props.showPressKit}>PRESS KIT</p>
                     </div>
                     <div className='Footer_social'>
                         <p className='Footer_social_title'>FIND US HERE:</p>

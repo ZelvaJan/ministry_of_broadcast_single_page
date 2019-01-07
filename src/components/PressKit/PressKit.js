@@ -2,8 +2,10 @@ import React, {Component} from 'react';
 import './PressKit.css';
 import FA from 'react-fontawesome';
 
-import logo from '../../assets/PressKit/logo.png';
-import icon from '../../assets/PressKit/icon.png';
+import logo from '../../assets/logo.png';
+import icon from '../../assets/icon.png';
+
+import MoB_press_kit from '../../assets/PressKit/MoB_press_kit.zip';
 
 // Images
 import img1 from '../../assets/gallery/1.png';
@@ -60,7 +62,7 @@ class PressKit extends Component {
                                     <div className='flex_h PressKit_factSheet_list'>
                                         <div>
                                             <h4>Developers:</h4>
-                                            <a href="TODO" target='_blank' rel="noopener noreferrer">Ministry of
+                                            <a href="https://ministryofbroadcast.com/" target='_blank' rel="noopener noreferrer">Ministry of
                                                 Broadcast</a>
                                             <p>Czech Republic</p>
                                         </div>
@@ -84,7 +86,7 @@ class PressKit extends Component {
                                         </div>
                                         <div>
                                             <h4>Publisher:</h4>
-                                            <p><a href="TODO" target='_blank' rel="noopener noreferrer">Hitcents</a>,
+                                            <p><a href="https://hitcents.com/" target='_blank' rel="noopener noreferrer">Hitcents</a>,
                                                 LA, USA</p>
                                         </div>
                                     </div>
@@ -122,13 +124,13 @@ class PressKit extends Component {
                             <div className='PressKit_box PressKit_logo_wrapper'>
                                 <h3>LOGO</h3>
                                 <div className='PressKit_logo'>
-                                    <img src={logo} alt="Logo"/>
+                                    <img src={logo} alt="Logo" onClick={() => {window.open(logo)}}/>
                                 </div>
                             </div>
                             <div className='PressKit_box PressKit_icon_wrapper'>
                                 <h3>ICON</h3>
                                 <div className='PressKit_icon'>
-                                    <img src={icon} alt="Icon"/>
+                                    <img src={icon} alt="Icon" onClick={() => {window.open(icon)}}/>
                                 </div>
                             </div>
                         </div>
@@ -141,16 +143,17 @@ class PressKit extends Component {
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
                                                 src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=0&controls=0&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
+                                        <div className='PressKit_trailer_overlay'/>
                                     </div>
                                 </div>
                                 <div className='PressKit_box'>
                                     <h3>ONLINE ACTIVITY</h3>
                                     <div className='PressKit_online_list'>
-                                        <a href="TODO" target='_blank' rel="noopener noreferrer">Steam</a>
-                                        <a href="TODO" target='_blank' rel="noopener noreferrer">Twitter</a>
-                                        <a href="TODO" target='_blank' rel="noopener noreferrer">Facebook</a>
-                                        <a href="TODO" target='_blank' rel="noopener noreferrer">DevBlog</a>
-                                        <a href="TODO" target='_blank' rel="noopener noreferrer">Discord</a>
+                                        <a href="https://store.steampowered.com/app/874040/Ministry_of_Broadcast/" target='_blank' rel="noopener noreferrer">Steam</a>
+                                        <a href="https://twitter.com/OfBroadcast" target='_blank' rel="noopener noreferrer">Twitter</a>
+                                        <a href="https://www.facebook.com/TheWallShow/" target='_blank' rel="noopener noreferrer">Facebook</a>
+                                        <a href="https://twinpetes.com/" target='_blank' rel="noopener noreferrer">DevBlog</a>
+                                        <a href="https://discord.gg/QnG3AHg" target='_blank' rel="noopener noreferrer">Discord</a>
                                     </div>
                                 </div>
                             </div>
@@ -201,49 +204,49 @@ class PressKit extends Component {
                             <div className='PressKit_box PressKit_awards'>
                                 <h3>AWARDS AND RECOGNITION</h3>
                                 <h4>Awards:</h4>
-                                <p>Best Gameplay ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game
+                                <p>Best Gameplay ‘18, <a href="https://game-access.com/conference/" target='_blank' rel="noopener noreferrer">Game
                                     Access, CZ</a></p>
 
                                 <h4>Nominations:</h4>
-                                <p>Best Art ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game Access,
+                                <p>Best Art ‘18, <a href="https://game-access.com/conference/" target='_blank' rel="noopener noreferrer">Game Access,
                                     CZ</a></p>
-                                <p>Best Gameplay ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game
+                                <p>Best Gameplay ‘18, <a href="https://game-access.com/conference/" target='_blank' rel="noopener noreferrer">Game
                                     Access, CZ</a></p>
-                                <p>Best Desktop ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game
+                                <p>Best Desktop ‘18, <a href="https://www.game-connection.com/game-connection-europe-2018-development-awards/" target='_blank' rel="noopener noreferrer">Game
                                     Connection, FR</a></p>
-                                <p>Most Original ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game
+                                <p>Most Original ‘18, <a href="https://www.game-connection.com/game-connection-europe-2018-development-awards/" target='_blank' rel="noopener noreferrer">Game
                                     Connection, FR</a></p>
-                                <p>Best Story ’18, <a href="TODO" target='_blank' rel="noopener noreferrer">Game
+                                <p>Best Story ’18, <a href="https://www.game-connection.com/game-connection-europe-2018-development-awards/" target='_blank' rel="noopener noreferrer">Game
                                     Connection, FR</a></p>
-                                <p>Official Selection ‘18, <a href="TODO" target='_blank' rel="noopener noreferrer">Indiecade,
+                                <p>Official Selection ‘18, <a href="https://www.indiecade.com/2018-games/" target='_blank' rel="noopener noreferrer">Indiecade,
                                     USA</a></p>
-                                <p>Official Selection ‘18 <a href="TODO" target='_blank' rel="noopener noreferrer">Indiecade,
+                                <p>Official Selection ‘18 <a href="https://indiecade-europe.eu/en/programme/jeux" target='_blank' rel="noopener noreferrer">Indiecade,
                                     FR</a></p>
                             </div>
                             <div className='PressKit_section_column PressKit_articles_wrapper'>
                                 <div className='PressKit_box flex_1'>
                                     <h3>SELECTED ARTICLES</h3>
 
-                                    <p>”Best Gameplay Award winner”, <a href="TODO" target='_blank'
+                                    <p>”Best Gameplay Award winner”, <a href="https://cz.ign.com/game-access-2018/7989/feature/game-access-2018-je-za-nami-a-ukazal-nam-nadherne-veci" target='_blank'
                                                                         rel="noopener noreferrer">IGN CZ</a></p>
-                                    <p>”The televised dystopia”, <a href="TODO" target='_blank'
+                                    <p>”The televised dystopia”, <a href="https://niveloculto.com/ministry-of-broadcast-la-distopia-televisada/" target='_blank'
                                                                     rel="noopener noreferrer">NIVEL OCULTO</a></p>
-                                    <p>”An awesome new game, with killer animations”, <a href="TODO" target='_blank'
+                                    <p>”An awesome new game, with killer animations”, <a href="https://80.lv/articles/ministry-of-broadcast-pixel-totalitarianism/" target='_blank'
                                                                                          rel="noopener noreferrer">80.lvl</a>
                                     </p>
-                                    <p>”From Pixel Art to Collectable Art”, <a href="TODO" target='_blank'
+                                    <p>”From Pixel Art to Collectable Art”, <a href="https://www.branding.news/2018/10/24/ministry-of-broadcast-from-pixel-art-to-collectable-art/" target='_blank'
                                                                                rel="noopener noreferrer">BRANDING
                                         NEWS</a></p>
-                                    <p>”An unexpected surprise coming from the Czech Republic”, <a href="TODO"
+                                    <p>”An unexpected surprise coming from the Czech Republic”, <a href="https://www.vortex.cz/databaze/ministry-of-broadcast/"
                                                                                                    target='_blank'
                                                                                                    rel="noopener noreferrer">VORTEX</a>
                                     </p>
-                                    <p>”A brand new indie game with unique atmosphere”, <a href="TODO" target='_blank'
+                                    <p>”A brand new indie game with unique atmosphere”, <a href="https://www.facebook.com/GamologyTrailers.Kelinetwork/videos/ministry-of-broadcast-gamology-news/938208233049795/" target='_blank'
                                                                                            rel="noopener noreferrer">GAMOLOGY</a>
                                     </p>
                                 </div>
                                 <div className='PressKit_box PressKit_download'>
-                                    <a href="TODO_path_to_file" download="proposed_file_name">DOWNLOAD THE WHOLE PRESS
+                                    <a href={MoB_press_kit} download="MoB_press_kit">DOWNLOAD THE WHOLE PRESS
                                         KIT</a>
                                 </div>
                             </div>
@@ -258,7 +261,10 @@ class PressKit extends Component {
     }
 
     static renderImage(img) {
-        return <img className='PressKit_image' src={img} alt=''/>
+        return <div className='PressKit_image_wrapper' onClick={() => {window.open(img);}}>
+            <img className='PressKit_image' src={img} alt=''/>
+            <div className='PressKit_image_overlay'/>
+        </div>
     }
 }
 

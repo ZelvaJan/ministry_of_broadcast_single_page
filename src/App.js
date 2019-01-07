@@ -1,24 +1,44 @@
 import React, {Component} from 'react';
 import MainPage from "./components/MainPage";
 import {version} from '../package.json';
+import './App.css';
+
+import logo from './assets/logo.png';
+import crowSprite from './assets/crow_dance.png';
+
+import SpriteSheet from "./components/utils/Spritesheet";
 
 class App extends Component {
 
     constructor() {
         super();
 
+        let isAlreadyLoaded = false;
+        if (typeof window !== 'undefined') {
+            window.onload = () => {
+                window.scrollTo(0, 0);
+                this.setState({isLoaded: true});
+            };
+
+            window.onbeforeunload = () => {
+                window.scrollTo(0, 0);
+            };
+        } else {
+            console.error("Window is missing");
+            isAlreadyLoaded = true;
+        }
+
         const thankYou = !!getURLParameter("thankYou");
 
         this.state = {
             width: window.innerWidth,
+            isLoaded: isAlreadyLoaded,
             displayThankYou: thankYou
         };
 
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.addSnow = this.addSnow.bind(this);
     }
-
-    // TODO on page load scrool to top
 
     componentDidMount() {
         window.addEventListener('resize', this.updateWindowDimensions);
@@ -114,7 +134,42 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <MainPage/>
+                {this.state.displayThankYou
+                    ? <div className="App_thankYou_wrapper">
+                        <img className='App_thankYou_logo' src={logo} alt=''/>
+                        <h2>Thanks you for subscription</h2>
+                        <div className='App_button_wrapper'>
+                            <SpriteSheet image={crowSprite}
+                                         widthFrame={13}
+                                         heightFrame={9}
+                                         steps={4}
+                                         fps={12}
+                                         startAt={0}
+                                         loop={true}
+                                         autoplay={false}
+                                         getInstance={(spriteSheet) => {
+                                             this.crowSheet = spriteSheet;
+                                         }}
+                                         className='App_button_crow'/>
+                            <button className='App_button'
+                                    onClick={() => {
+                                        this.setState({displayThankYou: false})
+                                    }}
+                                    onMouseEnter={() => {
+                                        if (this.crowSheet) this.crowSheet.goToAndPlay(0)
+                                    }}
+                                    onMouseOut={() => {
+                                        if (this.crowSheet) this.crowSheet.goToAndPause(0)
+                                    }}
+                            >
+                                CONTINUE
+                            </button>
+                        </div>
+                    </div>
+                    : <MainPage
+                        isLoaded={this.state.isLoaded}
+                    />
+                }
                 <canvas id='Snow_canvas'/>
             </div>
         );

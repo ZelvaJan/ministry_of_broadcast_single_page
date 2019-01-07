@@ -59,6 +59,10 @@ code {
     left: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .hidden {
     display: none;
 }
