@@ -27,12 +27,13 @@ class Gallery extends Component {
         speed: 500,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '120px',
+        centerPadding: '80px',
         slidesToScroll: 1,
         adaptHeight: true,
         lazyLoad: true,
         swipeToSlide: true,
         variableWidth: true,
+        accessibility: false,
         responsive: [
             {
                 breakpoint: 600,

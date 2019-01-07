@@ -76,6 +76,11 @@
     display: flex
 }
 
+.slick-arrow {
+    display: none !important;
+    overflow: hidden;
+}
+
 .Gallery_item {
     padding: 10px 40px;
     max-height: 70vh;
