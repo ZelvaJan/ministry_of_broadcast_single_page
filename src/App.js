@@ -7,6 +7,7 @@ import logo from './assets/logo.png';
 import crowSprite from './assets/crow_dance.png';
 
 import SpriteSheet from "./components/utils/Spritesheet";
+import {clamp} from "./components/utils/Utils";
 
 class App extends Component {
 
@@ -36,6 +37,8 @@ class App extends Component {
             displayThankYou: thankYou
         };
 
+        this.snowTimeout = null;
+
         this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
         this.addSnow = this.addSnow.bind(this);
     }
@@ -50,69 +53,66 @@ class App extends Component {
     }
 
     updateWindowDimensions() {
-        MainPage.canvas.width = MainPage.canvWidth = window.innerWidth;
-        MainPage.canvas.height = MainPage.canvHeight = window.innerHeight;
         MainPage.endAnimationCycle = true;
-        this.addSnow();
+
+        if (this.snowTimeout) {
+            clearTimeout(this.snowTimeout);
+        }
+        this.snowTimeout = setTimeout(() => {
+            this.snowTimeout = null;
+            this.addSnow();
+        }, 10);
 
         const newWidth = Math.round(window.innerWidth);
-        console.warn("New width: " + newWidth);
         this.setState({
             width: newWidth
         });
     }
 
+
     addSnow = () => {
+        console.log("New snow");
         MainPage.canvas = document.getElementById('Snow_canvas');
         if (MainPage.canvas) {
             const $ = MainPage.canvas.getContext("2d");
             MainPage.canvWidth = MainPage.canvas.width = window.innerWidth;
             MainPage.canvHeight = MainPage.canvas.height = window.innerHeight;
-            let f;
+            const size = MainPage.canvWidth * MainPage.canvHeight;
 
-            const width = this.state.width;
+            let flake, snow, arr = [];
+            let sp = 1, minSp = 0.75, maxSp = 2;    // Speed, minimal and maximal speed
+            let num = clamp(size / 1600, 100, 1000); // Number of snow flakes between 100 - 1000
 
-            let snow, arr = [];
-            let num = 600, sp = 1;
-            let sc = 1.3, mv = 10, min = 0.5, max = 2;
-            if (width < 800) {
-                num = 200;
-                mv = 5;
-            }
-
-            for (let i = 0; i < num; ++i) {
+            for (let i = 0; i < num; i++) {
                 snow = new Flake();
                 snow.y = Math.random() * (MainPage.canvHeight + 50);
                 snow.x = Math.random() * MainPage.canvWidth;
-                snow.t = Math.random() * (Math.PI * 2);
-                snow.sz = (100 / (10 + (Math.random() * 100))) * sc;
-                snow.sp = (Math.pow(snow.sz * .8, 2) * .15) * sp;
-                snow.sp = snow.sp < min ? min : snow.sp;
-                snow.sp = snow.sp > max ? max : snow.sp;
-                // console.log(snow.sp);
+                snow.size = 2 + 7 * Math.random();
+                snow.sp = clamp((Math.pow(snow.size * .5, 2) * .15) * sp, minSp, maxSp);
                 arr.push(snow);
             }
+
+            console.warn("Size: " + size);
+            console.log('Number of flakes: ', arr.length);
+            //console.log('Speed of flakes: ', mv);
+
             go();
 
             function go() {
-                if (!MainPage.endAnimationCycle) {
-                    window.requestAnimationFrame(go);   // Request another animation step
-                } else {
-                    MainPage.endAnimationCycle = false;
-                }
+                // End animation cycle or continue with requesting new animation frame
+                MainPage.endAnimationCycle ? MainPage.endAnimationCycle = false : window.requestAnimationFrame(go);
 
+                // Clear canvas
                 $.clearRect(0, 0, MainPage.canvWidth, MainPage.canvHeight); // Clear canvas
 
-                for (let i = 0; i < arr.length; ++i) { // Move flakes and draw them
-                    f = arr[i];
-                    f.t += .05;
-                    f.t = f.t >= Math.PI * 2 ? 0 : f.t;
-                    f.y += f.sp;
-                    f.x = f.x + Math.random() * 1.5;
-                    if (f.y > MainPage.canvHeight + 50) f.y = -10 - Math.random() * mv;
-                    if (f.x > MainPage.canvWidth + mv) f.x = -mv;
-                    if (f.x < -mv) f.x = MainPage.canvWidth + mv;
-                    f.draw();
+                // Move flakes and draw them
+                for (let i = 0; i < arr.length; i++) {
+                    flake = arr[i];
+                    flake.y += flake.sp;
+                    flake.x = flake.x + Math.random() * 1.5;
+                    if (flake.y > MainPage.canvHeight) flake.y = -5 + Math.random() * -20;   // When flake fall down of screen
+                    if (flake.x > MainPage.canvWidth) flake.x = Math.random() * -10;      // When flake falls to much to right
+                    flake.draw();
                 }
             }
 
@@ -121,10 +121,7 @@ class App extends Component {
                     $.moveTo(this.x, this.y);
                     $.fillStyle = 'rgba(246, 249, 232, 1)';
                     $.beginPath();
-                    if (this.sz > 8) {
-                        this.sz = 8;
-                    }
-                    $.rect(this.x, this.y, this.sz, this.sz);
+                    $.rect(this.x, this.y, this.size, this.size);
                     $.fill();
                 }
             }
