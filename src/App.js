@@ -81,13 +81,13 @@ class App extends Component {
 
             let flake, snow, arr = [];
             let sp = 1, minSp = 0.75, maxSp = 2;    // Speed, minimal and maximal speed
-            let num = clamp(size / 1600, 100, 1000); // Number of snow flakes between 100 - 1000
+            let num = clamp(size / 2000, 100, 750); // Number of snow flakes between 100 - 1000
 
             for (let i = 0; i < num; i++) {
                 snow = new Flake();
                 snow.y = Math.random() * (MainPage.canvHeight + 50);
                 snow.x = Math.random() * MainPage.canvWidth;
-                snow.size = 2 + 7 * Math.random();
+                snow.size = 1 + 5 * Math.random();
                 snow.sp = clamp((Math.pow(snow.size * .5, 2) * .15) * sp, minSp, maxSp);
                 arr.push(snow);
             }
