@@ -78,7 +78,6 @@ class MainPage extends Component {
     }
 
     onContentScroll = (event) => {
-        console.warn("Scroll: ", event);
         event.preventDefault();
         const scrollTop = window.scrollY;
 

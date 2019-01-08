@@ -130,6 +130,15 @@
     flex: 1 1 192px;
 }
 
+.PressKit_content_wrapper p {
+    cursor: pointer;
+    transition: all 200ms ease-in-out 0s;
+}
+
+.PressKit_content_wrapper p:hover {
+    color: #d13715;
+}
+
 .PressKit_factSheet_wrapper {
     flex: 100 1 280px;
 }
@@ -184,6 +193,7 @@
     transition: all 200ms ease-in-out 0s;
     filter: grayscale(100%);
     cursor: pointer;
+    position: relative;
 }
 
 .PressKit_trailer_wrapper:hover {
