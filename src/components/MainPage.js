@@ -259,7 +259,7 @@ class MainPage extends Component {
                         Back
                     </button>
                     <button className='MainPage_trailer_button small white' onClick={this.hideTrailer}>
-                        <FA name='stop'/>
+                        <FA name='times'/>
                     </button>
                     <iframe className="videoContainer__video" title='Ministry gameplay trailer'
                             src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=1&controls=0&showinfo=0&disablekb=1"

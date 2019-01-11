@@ -41,8 +41,9 @@
     background: #0f191c;
     z-index: 9999;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background: url("../assets/bg_tile.png") repeat;
 }
 .MainPage_awards_bg_circle {
@@ -53,13 +54,13 @@
 }
 
 .MaiPage_awards_list {
-    flex: 1;
     display: flex;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin-top: 175px;
+    margin-top: 190px;
     align-items: center;
     justify-content: center;
+    padding-bottom: 150px;
 }
 
 .MaiPage_awards_list div {
@@ -157,7 +158,19 @@
 
 @media (max-width: 870px) {
     .MaiPage_awards_list {
-        margin-top: 105px;
+        margin-top: 130px;
+    }
+
+    .MaiPage_awards_list img {
+        width: 225px;
+        height: 151px;
+    }
+
+    .videoContainer__video {
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 70%;
     }
 }
 

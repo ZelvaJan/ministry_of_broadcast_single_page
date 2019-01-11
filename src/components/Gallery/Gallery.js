@@ -14,7 +14,6 @@ import img7 from '../../assets/gallery/7.png';
 import img8 from '../../assets/gallery/8.jpg';
 import img9 from '../../assets/gallery/9.png';
 import img20 from '../../assets/gallery/20.jpg';
-import basecampGif from '../../assets/gallery/basecamp.gif';
 import figure from '../../assets/gallery/figure.jpg';
 
 
@@ -29,7 +28,7 @@ class Gallery extends Component {
         centerMode: true,
         centerPadding: '80px',
         slidesToScroll: 1,
-        adaptHeight: true,
+        adaptHeight: false,
         lazyLoad: true,
         swipeToSlide: true,
         variableWidth: true,
@@ -64,7 +63,6 @@ class Gallery extends Component {
                     </section>
                     <div className='Gallery_slider_wrapper'>
                         <Slider ref={slider => (this.slider = slider)} {...Gallery.settings}>
-                            {Gallery.renderGalleryCard(basecampGif)}
                             {Gallery.renderGalleryCard(img1)}
                             {Gallery.renderGalleryCard(img2)}
                             {Gallery.renderGalleryCard(img3)}

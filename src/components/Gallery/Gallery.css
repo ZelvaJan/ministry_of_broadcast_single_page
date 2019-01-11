@@ -46,7 +46,7 @@
     color: #d13715;
     font-size: 80px;
     font-weight: bold;
-    padding: 10px;
+    padding: 10px 8px;
     cursor: pointer;
     transition: all 500ms ease-in-out 0s;
     z-index: 1;

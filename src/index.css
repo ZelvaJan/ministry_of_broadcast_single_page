@@ -76,4 +76,5 @@ code {
     max-width: 1250px;
     width: 100%;
     z-index: 1;
+    padding-left: 8px;
 }
