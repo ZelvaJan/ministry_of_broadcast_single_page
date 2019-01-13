@@ -1,3 +1,5 @@
+import {handleErrors} from "../../App";
+
 const possibilities = {
     lowerCased: 'abcdefghijklmnopqrstuvwxyz',
     capitals: 'ABCDEFGHIJKLMNOPQRSTUVWXYZ',
@@ -59,4 +61,20 @@ export function getRandomInt(min, max) {
  */
 export function clamp(number, min, max) {
     return Math.min(Math.max(number, min), max);
+}
+
+/**
+ * Set body scrollbar visibility and also possibility to scroll
+ * @param visible true for visible
+ */
+export function setBodyScrollBarVisible(visible) {
+    try {
+        if (visible) {
+            document.getElementsByTagName("body")[0].style.overflow = "auto"
+        } else {
+            document.getElementsByTagName("body")[0].style.overflow = "hidden"
+        }
+    } catch (e) {
+        handleErrors(e);
+    }
 }

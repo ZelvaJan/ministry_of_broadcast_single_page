@@ -23,6 +23,7 @@ import Logo from "./Logo/Logo";
 import {handleErrors} from "../App";
 import PressKit from "./PressKit/PressKit";
 import PropTypes from "prop-types";
+import {hideBodyScrollBar, setBodyScrollBarVisible} from "./utils/Utils";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -155,43 +156,29 @@ class MainPage extends React.PureComponent {
     };
 
     showTrailer = () => {
+        setBodyScrollBarVisible(false);
         this.setState({isTrailerVisible: true})
     };
     hideTrailer = () => {
+        setBodyScrollBarVisible(true);
         this.setState({isTrailerVisible: false})
     };
 
     showAwards = () => {
-        try {
-            document.getElementsByTagName("body")[0].style.overflow = "hidden"
-        } catch (e) {
-            handleErrors(e);
-        }
+        setBodyScrollBarVisible(false);
         this.setState({isAwardsVisible: true})
     };
     hideAwards = () => {
-        try {
-            document.getElementsByTagName("body")[0].style.overflow = "auto"
-        } catch (e) {
-            handleErrors(e);
-        }
+        setBodyScrollBarVisible(true);
         this.setState({isAwardsVisible: false})
     };
 
     showPressKit = () => {
-        try {
-            document.getElementsByTagName("body")[0].style.overflow = "hidden"
-        } catch (e) {
-            handleErrors(e);
-        }
+        setBodyScrollBarVisible(false);
         this.setState({isPressKitOpen: true})
     };
     hidePressKit = () => {
-        try {
-            document.getElementsByTagName("body")[0].style.overflow = "auto"
-        } catch (e) {
-            handleErrors(e);
-        }
+        setBodyScrollBarVisible(true);
         this.setState({isPressKitOpen: false})
     };
 
@@ -264,7 +251,7 @@ class MainPage extends React.PureComponent {
                         <FA name='times'/>
                     </button>
                     <iframe className="videoContainer__video" title='Ministry gameplay trailer'
-                            src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=1&controls=0&showinfo=0&disablekb=1"
+                            src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=1&controls=1&showinfo=0&disablekb=1"
                             frameBorder="0"/>
                 </div>
             )
