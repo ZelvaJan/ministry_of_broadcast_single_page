@@ -30,46 +30,6 @@ class Intro extends React.PureComponent {
             </div>
         )
     }
-
-    /* TODO what about text animations
-    animateText () {
-        // Initialize
-        var txt = new window.TextFx(document.getElementById('firstTitleAnim'));
-
-        // Show letters:
-        // txt.show([effect] [,callback]);
-        // If nothing is passed, then there's no animation.
-        // ´effect´ can either be one of the predefined effects: ['fx1',...,'fx17'] or
-        // an object literal representing both, in and out animations (anime.js based).
-
-        // Example:
-                const effect = {
-                    in: {
-                        duration: 500,
-                        delay: function(el, index) {
-                            return 250+index*40;
-                        },
-                        easing: 'easeOutExpo',
-                        opacity: 1,
-                        translateY: ['1000%','0%']
-                    },
-                    out: {
-                        duration: 500,
-                        delay: function(el, index) {
-                            return index*40;
-                        },
-                        easing: 'easeOutExpo',
-                        opacity: 0,
-                        translateY: '-1000%'
-                    }
-                }
-        // ´callback´ is the callback function, after all the letters finished the animation.
-
-        // Hide letters:
-        txt.show(effect);
-        // txt.hide([effect] [,callback]); (same logic of show)
-    }
-    */
 }
 
 export default Intro;

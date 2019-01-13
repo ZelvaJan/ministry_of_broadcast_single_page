@@ -89,7 +89,7 @@ class SpriteSheet extends Component {
             elMove
         );
 
-        let elSprite = React.createElement(
+        return React.createElement(
             'div',
             {
                 id: this.ID,
@@ -107,8 +107,6 @@ class SpriteSheet extends Component {
             },
             elContainer
         );
-
-        return elSprite;
     };
 
     init = () => {

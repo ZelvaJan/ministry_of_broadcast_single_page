@@ -186,12 +186,7 @@ class HomePage extends React.PureComponent {
      */
     canWalk (faceLeft = this.faceLeft) {
         const walk = (faceLeft && this.walkPos > -80) || (!faceLeft && this.walkPos < 80);
-        if (walk) {
-            return true;
-        } else {
-            //console.warn("Block walk. Face: " + faceLeft + ". Position: " + this.walkPos + ". Walk: " + !walk);
-            return false;
-        }
+        return !!walk;
     }
 }
 

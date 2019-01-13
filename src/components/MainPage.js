@@ -20,10 +20,9 @@ import award6 from '../assets/awards/6.svg';
 import award7 from '../assets/awards/7.svg';
 import award8 from '../assets/awards/8.svg';
 import Logo from "./Logo/Logo";
-import {handleErrors} from "../App";
 import PressKit from "./PressKit/PressKit";
 import PropTypes from "prop-types";
-import {hideBodyScrollBar, setBodyScrollBarVisible} from "./utils/Utils";
+import {setBodyScrollBarVisible} from "./utils/Utils";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -43,7 +42,7 @@ const anim = {
     distance: 0,
     newPos: 0,
     time: 0
-}
+};
 const animDuration = 2000;
 
 class MainPage extends React.PureComponent {
