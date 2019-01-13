@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
 import './NavigationBar.css';
 import {EPage, ids} from "../MainPage";
 import {handleErrors} from "../../App";
 
 
-class NavigationBar extends Component {
+class NavigationBar extends React.PureComponent {
 
     static propTypes = {
         activePage: PropTypes.string.isRequired,

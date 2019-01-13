@@ -1,10 +1,10 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './About.css';
 import crowSprite from '../../assets/crow_dance.png';
 import {EPage} from "../MainPage";
 import SpriteSheet from "../utils/Spritesheet";
 
-class About extends Component {
+class About extends React.PureComponent {
 
     render() {
 

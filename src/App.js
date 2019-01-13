@@ -165,6 +165,7 @@ class App extends Component {
                     </div>
                     : <MainPage
                         isLoaded={this.state.isLoaded}
+                        width={this.state.width}
                     />
                 }
                 <canvas id='Snow_canvas'/>

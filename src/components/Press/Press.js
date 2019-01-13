@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Press.css';
 import crowSprite from '../../assets/crow_dance.png';
 
@@ -17,7 +17,7 @@ import SpriteSheet from "../utils/Spritesheet";
 import PropTypes from "prop-types";
 
 
-class Press extends Component {
+class Press extends React.PureComponent {
 
     static propTypes = {
         showPressKit: PropTypes.func.isRequired

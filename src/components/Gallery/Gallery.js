@@ -1,4 +1,5 @@
-import React, {Component} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './Gallery.css';
 import Slider from "react-slick";
 import {EPage} from "../MainPage";
@@ -16,8 +17,21 @@ import img9 from '../../assets/gallery/9.png';
 import img20 from '../../assets/gallery/20.jpg';
 import figure from '../../assets/gallery/figure.jpg';
 
+const aspectRatio = 1.778;
 
-class Gallery extends Component {
+class Gallery extends React.PureComponent {
+
+    static propTypes = {
+        width: PropTypes.number.isRequired
+    };
+
+    constructor() {
+        super();
+
+        this.state = {
+            maxItemHeight: 200,
+        };
+    }
 
     // https://github.com/akiran/react-slick
     static settings = {
@@ -28,7 +42,7 @@ class Gallery extends Component {
         centerMode: true,
         centerPadding: '80px',
         slidesToScroll: 1,
-        adaptHeight: false,
+        adaptHeight: true,
         lazyLoad: true,
         swipeToSlide: true,
         variableWidth: true,
@@ -41,6 +55,19 @@ class Gallery extends Component {
                 }
             },
         ]
+    };
+
+    componentDidMount() {
+        this.updateHeight();
+    }
+
+    componentDidUpdate() {
+        this.updateHeight();
+    }
+
+    updateHeight = () => {
+        let height = this.props.width / aspectRatio;
+        this.setState({maxItemHeight: (height > 200 ? height : 200)});
     };
 
     render() {
@@ -63,18 +90,18 @@ class Gallery extends Component {
                     </section>
                     <div className='Gallery_slider_wrapper'>
                         <Slider ref={slider => (this.slider = slider)} {...Gallery.settings}>
-                            {Gallery.renderGalleryCard(img1)}
-                            {Gallery.renderGalleryCard(img2)}
-                            {Gallery.renderGalleryCard(img3)}
-                            {Gallery.renderGalleryCard(img4)}
-                            {Gallery.renderGalleryCard(img5)}
-                            {Gallery.renderGalleryCard(img51)}
-                            {Gallery.renderGalleryCard(img6)}
-                            {Gallery.renderGalleryCard(img7)}
-                            {Gallery.renderGalleryCard(img8)}
-                            {Gallery.renderGalleryCard(img9)}
-                            {Gallery.renderGalleryCard(img20)}
-                            {Gallery.renderGalleryCard(figure)}
+                            {this.renderGalleryCard(img1)}
+                            {this.renderGalleryCard(img2)}
+                            {this.renderGalleryCard(img3)}
+                            {this.renderGalleryCard(img4)}
+                            {this.renderGalleryCard(img5)}
+                            {this.renderGalleryCard(img51)}
+                            {this.renderGalleryCard(img6)}
+                            {this.renderGalleryCard(img7)}
+                            {this.renderGalleryCard(img8)}
+                            {this.renderGalleryCard(img9)}
+                            {this.renderGalleryCard(img20)}
+                            {this.renderGalleryCard(figure)}
                         </Slider>
                     </div>
                 </div>
@@ -82,8 +109,12 @@ class Gallery extends Component {
         )
     }
 
-    static renderGalleryCard(img) {
-        return <img className='Gallery_item' src={img} alt=''/>
+    renderGalleryCard(img) {
+        return <div>
+            <img className='Gallery_item' style={{
+                height: this.state.maxItemHeight + 'px'
+            }} src={img} alt=''/>
+        </div>
     }
 }
 

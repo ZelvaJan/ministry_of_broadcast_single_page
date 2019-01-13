@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Footer.css';
 import asDiscord from '../../assets/logos/Social_Discord.svg';
 import asDiscordActive from '../../assets/logos/Social_Discord_active.svg';
@@ -10,7 +10,7 @@ import asSteam from '../../assets/logos/Social_Steam.svg';
 import asSteamActive from '../../assets/logos/Social_Steam_active.svg';
 import PropTypes from "prop-types";
 
-class Footer extends Component {
+class Footer extends React.PureComponent {
 
     static propTypes = {
         showPressKit: PropTypes.func.isRequired

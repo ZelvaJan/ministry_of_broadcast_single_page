@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './MainPage.css';
 import Intro from "./Intro/Intro";
 import HomePage from "./HomePage/HomePage";
@@ -45,10 +45,11 @@ const anim = {
 }
 const animDuration = 2000;
 
-class MainPage extends Component {
+class MainPage extends React.PureComponent {
 
     static propTypes = {
-        isLoaded: PropTypes.bool.isRequired
+        isLoaded: PropTypes.bool.isRequired,
+        width: PropTypes.number.isRequired
     };
 
     constructor() {
@@ -237,7 +238,8 @@ class MainPage extends Component {
 
                 <HomePage/>
                 <About/>
-                <Gallery/>
+                <Gallery
+                    width={this.props.width}/>
                 <Press
                     showPressKit={this.showPressKit}
                 />

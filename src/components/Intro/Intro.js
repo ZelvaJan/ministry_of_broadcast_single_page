@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './Intro.css';
 
-class Intro extends Component {
+class Intro extends React.PureComponent {
 
     render() {
 

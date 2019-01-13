@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import './HomePage.css';
 import {EPage} from "../MainPage";
 import asNintendoSwitch from "../../assets/logos/nintendo_switch.svg";
@@ -15,7 +15,7 @@ const sch = 33, ech = 36;
 
 const snowCleanerId = "Snow_cleaner_id";
 
-class HomePage extends Component {
+class HomePage extends React.PureComponent {
 
     constructor() {
         super();
