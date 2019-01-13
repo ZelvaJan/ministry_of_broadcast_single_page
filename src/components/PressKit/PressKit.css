@@ -209,6 +209,7 @@
     height: 100%;
     max-width: 800px;
     max-height: 800px;
+    pointer-events: none;
     background: url(
     data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATklEQVQoU2NkYGAwZmBgOMuAACA+CKCIMSIpADGRNaEYgKwQ3WQUjTCF6CYhWw2WAynEpgjmIpg7jUlSiM0TWK2GWUOUZ7ApxggeogIcABHJFtftKVfJAAAAAElFTkSuQmCC
     ) repeat;
@@ -237,16 +238,17 @@
     margin: 0 50px 10px 0;
 }
 
+.PressKit_images {
+    flex: 1 1 290px;
+}
 .PressKit_images_list {
     display: flex;
     flex-wrap: wrap;
 }
-
 .PressKit_image_wrapper {
     position: relative;
     cursor: pointer;
 }
-
 .PressKit_image {
     position: relative;
     max-height: 140px;
@@ -298,11 +300,12 @@
     margin: 20px 0 5px 0;
 }
 
-.PressKit_team h5 {
+.PressKit_team a {
     color: #d13715;
     font-size: 16px;
     font-weight: bold;
     margin: 0;
+    text-decoration: none;
 }
 
 .PressKit_team p {
@@ -312,6 +315,7 @@
 .PressKit_download {
     padding: 0 !important;
     display: flex;
+    text-align: center;
 }
 
 .PressKit_download a {

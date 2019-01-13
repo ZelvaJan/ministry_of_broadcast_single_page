@@ -18,6 +18,11 @@ import img20 from '../../assets/gallery/20.jpg';
 import figure from '../../assets/gallery/figure.jpg';
 
 const aspectRatio = 1.778;
+let currIndex = 0;
+
+function actualPosition(data) {
+    currIndex = data;
+}
 
 class Gallery extends React.PureComponent {
 
@@ -54,7 +59,9 @@ class Gallery extends React.PureComponent {
                     slidesToShow: 1.5,
                 }
             },
-        ]
+        ],
+        beforeChange: actualPosition,
+        afterChange: actualPosition
     };
 
     componentDidMount() {
@@ -70,7 +77,20 @@ class Gallery extends React.PureComponent {
         this.setState({maxItemHeight: (height > 200 ? height : 200)});
     };
 
+    /**
+     * Manual update of gallery position based on user click
+     * @param index
+     */
+    onImageClick = (index) => {
+        if (index !== currIndex) {
+            console.log("Force update of gallery position to: " + index + ". Actual index: " + currIndex);
+            if (this.slider) this.slider.slickGoTo(index);
+            currIndex = index;
+        }
+    };
+
     render() {
+        let i = 0;
 
         return (
             <div id={EPage.Gallery} className='Gallery_root'>
@@ -90,18 +110,18 @@ class Gallery extends React.PureComponent {
                     </section>
                     <div className='Gallery_slider_wrapper'>
                         <Slider ref={slider => (this.slider = slider)} {...Gallery.settings}>
-                            {this.renderGalleryCard(img1)}
-                            {this.renderGalleryCard(img2)}
-                            {this.renderGalleryCard(img3)}
-                            {this.renderGalleryCard(img4)}
-                            {this.renderGalleryCard(img5)}
-                            {this.renderGalleryCard(img51)}
-                            {this.renderGalleryCard(img6)}
-                            {this.renderGalleryCard(img7)}
-                            {this.renderGalleryCard(img8)}
-                            {this.renderGalleryCard(img9)}
-                            {this.renderGalleryCard(img20)}
-                            {this.renderGalleryCard(figure)}
+                            {this.renderGalleryCard(i++, img1)}
+                            {this.renderGalleryCard(i++, img2)}
+                            {this.renderGalleryCard(i++, img3)}
+                            {this.renderGalleryCard(i++, img4)}
+                            {this.renderGalleryCard(i++, img5)}
+                            {this.renderGalleryCard(i++, img51)}
+                            {this.renderGalleryCard(i++, img6)}
+                            {this.renderGalleryCard(i++, img7)}
+                            {this.renderGalleryCard(i++, img8)}
+                            {this.renderGalleryCard(i++, img9)}
+                            {this.renderGalleryCard(i++, img20)}
+                            {this.renderGalleryCard(i, figure)}
                         </Slider>
                     </div>
                 </div>
@@ -109,8 +129,8 @@ class Gallery extends React.PureComponent {
         )
     }
 
-    renderGalleryCard(img) {
-        return <div>
+    renderGalleryCard(index, img) {
+        return <div className='Gallery_item_wrapper' onClick={() => this.onImageClick(index)}>
             <img className='Gallery_item' style={{
                 height: this.state.maxItemHeight + 'px'
             }} src={img} alt=''/>

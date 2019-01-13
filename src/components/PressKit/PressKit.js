@@ -170,7 +170,7 @@ class PressKit extends Component {
                         </div>
 
                         <div className='PressKit_section'>
-                            <div className='PressKit_section_column flex_1'>
+                            <div className='PressKit_section_column'>
                                 <div id={ids.Trailer} className='PressKit_box flex_1 flex_v'>
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
@@ -197,7 +197,7 @@ class PressKit extends Component {
                                 </div>
                             </div>
 
-                            <div id={ids.Images} className='PressKit_box flex_1'>
+                            <div id={ids.Images} className='PressKit_box PressKit_images'>
                                 <h3>IMAGES</h3>
                                 <div className='PressKit_images_list'>
                                     {PressKit.renderImage(basecampGif)}
@@ -221,23 +221,23 @@ class PressKit extends Component {
                             <div id={ids.Team} className='PressKit_box PressKit_team '>
                                 <h3>THE TEAM</h3>
                                 <h4>Core Team:</h4>
-                                <h5>Petr Melicherík</h5>
+                                <a href="https://www.linkedin.com/in/petr-melicher%C3%ADk-96a75198/" target='_blank' rel="noopener noreferrer">Petr Melicherík</a>
                                 <p>Development, Mechanics, Game & Level design, Dialogues, Story</p>
-                                <h5>Petr Škorňok</h5>
+                                <a href="https://www.linkedin.com/in/skornok/" target='_blank' rel="noopener noreferrer">Petr Škorňok</a>
                                 <p>Development, Story, Game & Level design</p>
-                                <h5>Sanja Čežek</h5>
+                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Sanja Čežek</a>
                                 <p>Art direction, Branding, UX/UI, Story, Illustration, Game & Level design</p>
-                                <h5>Dušan Čežek</h5>
+                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Dušan Čežek</a>
                                 <p>Creative direction, Illustration, Animation, Story, Game & Level design</p>
 
                                 <h4>Collaborators:</h4>
-                                <h5>Marko Stanojević</h5>
+                                <a href="https://www.artstation.com/pyrohyper" target='_blank' rel="noopener noreferrer">Marko Stanojević</a>
                                 <p>Animation</p>
-                                <h5>Emil Gašparec</h5>
+                                <a href="https://www.linkedin.com/in/emilgasparec" target='_blank' rel="noopener noreferrer">Emil Gašparec</a>
                                 <p>Development, Level design</p>
-                                <h5>Anita Kudličková, Ambit</h5>
+                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Anita Kudličková, Ambit</a>
                                 <p>Sound design, SFX</p>
-                                <h5>Radek Nikl, Ambit</h5>
+                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Radek Nikl, Ambit</a>
                                 <p>Music composition, Sound design, SFX</p>
                             </div>
                             <div id={ids.Awards} className='PressKit_box PressKit_awards'>
@@ -307,8 +307,7 @@ class PressKit extends Component {
                                     </p>
                                 </div>
                                 <div className='PressKit_box PressKit_download'>
-                                    <a href={MoB_press_kit} download="MoB_press_kit">DOWNLOAD THE WHOLE PRESS
-                                        KIT</a>
+                                    <a href={MoB_press_kit} download="MoB_press_kit">DOWNLOAD PRESS KIT</a>
                                 </div>
                             </div>
                         </div>

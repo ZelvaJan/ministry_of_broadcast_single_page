@@ -3,6 +3,7 @@
     background-color: #1d3f53;
     position: relative;
     z-index: 99;
+    margin-top: 40px;
 }
 
 .Footer_content {
@@ -27,7 +28,7 @@
 
 .Footer_links {
     margin: 15px;
-    flex: 1 1 150px;
+    flex: 1 1 200px;
     font-size: 16px;
     display: flex;
     flex-direction: column;
@@ -48,7 +49,7 @@
 /**** Social *****************************************************/
 .Footer_social {
     margin: 15px;
-    flex: 1 1 150px;
+    flex: 1 1 200px;
 }
 .Footer_social_title {
     padding-left: 3px;
@@ -263,6 +264,7 @@ input:-webkit-autofill:active  {
 @media (max-width: 500px) {
     .Footer_root {
         text-align: center;
+        margin-top: 80px;
     }
     .Footer_content {
         margin: 50px auto 30px;
