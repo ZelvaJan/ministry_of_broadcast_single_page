@@ -132,9 +132,8 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <img id="thumb"
-                     alt="Ministry of Broadcast - Ministry of Broadcast is a 2D puzzle cinematic platformer with the similar concept to the original *Prince of Persia* (1989) or *Oddworld: Abe’s Exodus*. The story takes place in a country which has been divided by the wall (you can imagine Berlin Wall or Trump’s Wall ), the families were suddenly separated over the night and the only way how to get across the borders to the other (Western, Freedom) side is to win in a TV reality show."
-                     src={pageThumb} width="300px" style={{display: 'none'}}/>
+                <img id="thumb" src={pageThumb}
+                     alt="Ministry of Broadcast - Ministry of Broadcast is a 2D puzzle cinematic platformer with the similar concept to the original *Prince of Persia* (1989) or *Oddworld: Abe’s Exodus*. The story takes place in a country which has been divided by the wall (you can imagine Berlin Wall or Trump’s Wall ), the families were suddenly separated over the night and the only way how to get across the borders to the other (Western, Freedom) side is to win in a TV reality show."/>
                 {this.state.displayThankYou
                     ? <div className="App_thankYou_wrapper">
                         <img className='App_thankYou_logo' src={logo} alt=''/>

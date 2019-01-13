@@ -56,3 +56,7 @@
     border: 4px solid #d13715;
     background-color: #d13715;
 }
+
+#thumb {
+    display: none;
+}
