@@ -77,6 +77,9 @@
 .Footer_copyright {
     text-align: center;
     color: #4a9a96;
+    max-width: 80%;
+    font-size: 14px;
+    margin: 10px auto;
 }
 /*******************************************************************/
 

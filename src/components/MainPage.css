@@ -91,7 +91,7 @@
     transition: all 200ms ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    z-index: 9999;
+    z-index: 10;
 }
 
 .MainPage_awards_button {
@@ -108,7 +108,7 @@
     transition: all 200ms ease-in-out 0s;
     cursor: pointer;
     outline: none;
-    z-index: 9999;
+    z-index: 10;
 }
 
 .MainPage_trailer_button:hover, .MainPage_trailer_button:active,

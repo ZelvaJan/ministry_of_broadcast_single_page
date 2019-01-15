@@ -100,7 +100,7 @@ class Footer extends React.PureComponent {
                     </div>
                 </div>
 
-                <p className='Footer_copyright'>Copyright © Ministry of Broadcast 2018-2019</p>
+                <p className='Footer_copyright'>Ministry of Broadcast © 2019 Published by Hitcents.com, Inc and developed by Ministry Of Broadcast Studio.<br/>All rights reserved. Logos and trademarks are property of their respective owners.</p>
             </div>
         )
     }

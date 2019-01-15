@@ -125,7 +125,7 @@ class PressKit extends Component {
                                     <h3>STORY</h3>
                                     <p className='PressKit_story_text'>The Ministry of Broadcast is narrative-drive
                                         indie game, currently being
-                                        developed in the Czech Republic and it is scheduled for release in mid 2019 on
+                                        developed in the Czech Republic and it is scheduled for release in end 2019 on
                                         Windows, Mac and Nintendo Switch. This single-player pixel art platformer is
                                         inspired by the cinematic pieces like the original Prince of Persia (1989) and
                                         Oddworld: Abe’s Exoddus. The overall mood and tone is dark like Orwell’s 1984

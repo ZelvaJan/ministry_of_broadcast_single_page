@@ -19,7 +19,7 @@ class About extends React.PureComponent {
                             The Ministry of Broadcast is narrative-drive indie game, currently being developed in the Czech
                             Republic,
                             by 4 people who share the same ideals, dreams, visions and love for internet profanity. It is
-                            scheduled for release in mid 2019 on Windows, Mac and Nintendo Switch. This single-player pixel
+                            scheduled for release in end 2019 on Windows, Mac and Nintendo Switch. This single-player pixel
                             art
                             platformer is inspired by the cinematic pieces like the original Prince of Persia (1989) and
                             Oddworld: Abe’s Exoddus. The overall mood and tone is dark like Orwell’s 1984 combined with the

@@ -55,7 +55,7 @@ class Press extends React.PureComponent {
                                 <img src={asBn} alt='Branding news'/>
                             </div>
                             <div className='Press_list_item'>
-                                <p>“Congrats on the award! Great job on the game, it’s fun and fu</p>
+                                <p>“Great job on the game, it’s fun and funny!”</p>
                                 <img src={asRomero} alt='John Romero'/>
                             </div>
                             <div className='Press_list_item'>
