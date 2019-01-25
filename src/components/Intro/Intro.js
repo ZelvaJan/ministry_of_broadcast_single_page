@@ -8,24 +8,23 @@ class Intro extends React.PureComponent {
         return (
             <div className='Intro_root'>
                 <div className='Intro_section Intro_section_right'>
-                    <p id='firstTitleAnim' className='Intro_text'>A STORY ABOUT THE COUNTRY WHICH HAS BEEN DIVIDED BY THE WALL</p>
+                    <p id='firstTitleAnim' className='Intro_text'>A COUNTRY DIVIDED<br/>BY THE WALL.</p>
                 </div>
 
                 <div className='Intro_section Intro_section_left'>
-                    <p className='Intro_text'>TO CROSS, YOU WILL HAVE TO WIN IN A TV REALITY SHOW BROADCASTED BY THE
-                        STRICT REGIME</p>
+                    <p className='Intro_text'>TO CROSS IT AND REACH YOUR FAMILY ...</p>
                 </div>
 
                 <div className='Intro_section Intro_section_right'>
-                    <p className='Intro_text'>A NARRATIVE DRIVEN SINGLE PLAYER</p>
+                    <p className='Intro_text'>YOU MUST WIN IN A<br/>REALITY TV SHOW<br/>BROADCAST BY THE REGIME.</p>
                 </div>
 
                 <div className='Intro_section Intro_section_left'>
-                    <p className='Intro_text'>WHEN YOU MIX ORWELL 1984 WITH TV REALITY SHOWS...</p>
+                    <p className='Intro_text'>A NARRATIVE-DRIVEN<br/>SINGLE PLAYER<br/>CINEMATIC PLATFORMER ...</p>
                 </div>
 
                 <div className='Intro_section Intro_section_right'>
-                    <p className='Intro_text'>YOU GET...</p>
+                    <p className='Intro_text'>MIXING ORWELL’S 1984 WITH MODERN REALITY TV.</p>
                 </div>
             </div>
         )

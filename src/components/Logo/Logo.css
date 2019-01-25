@@ -67,8 +67,13 @@
         transform: scale(0.55) !important;
     }
 }
-
-@media (max-width: 520px) {
+@media (max-width: 680px) {
+    .Logo_root.LogoUp {
+        top: -65px !important;
+        transform: scale(0.45) !important;
+    }
+}
+@media (max-width: 530px) {
     .Logo_root.LogoUp {
         top: -75px !important;
         transform: scale(0.35) !important;

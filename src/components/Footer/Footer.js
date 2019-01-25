@@ -71,7 +71,7 @@ class Footer extends React.PureComponent {
                     <div className='Footer_social'>
                         <p className='Footer_social_title'>FIND US HERE:</p>
                         <div className='Footer_social_buttons'>
-                            <a href="https://discord.gg/QnG3AHg" target='_blank' rel="noopener noreferrer"
+                            <a href="https://discord.gg/hitcents" target='_blank' rel="noopener noreferrer"
                                className='Footer_social_link'>
                                 <img onMouseOver={(e) => this.srcChange(e, asDiscordActive)}
                                      onMouseOut={(e) => this.srcChange(e, asDiscord)}

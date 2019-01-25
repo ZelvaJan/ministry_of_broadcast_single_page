@@ -82,7 +82,7 @@ class App extends Component {
 
             let flake, snow, arr = [];
             let sp = 1, minSp = 0.75, maxSp = 2;    // Speed, minimal and maximal speed
-            let num = clamp(size / 2000, 100, 750); // Number of snow flakes between 100 - 1000
+            let num = clamp(size / 2000, 100, 700); // Number of snow flakes between 100 - 1000
 
             for (let i = 0; i < num; i++) {
                 snow = new Flake();

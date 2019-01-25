@@ -57,6 +57,7 @@ class MainPage extends React.PureComponent {
 
         this.state = {
             page: EPage.HomePage,
+            hideScrollNotification: false,
             introEnded: false,
             logoUp: false,
             isTrailerVisible: false,
@@ -81,6 +82,11 @@ class MainPage extends React.PureComponent {
     onContentScroll = (event) => {
         event.preventDefault();
         const scrollTop = window.scrollY;
+
+        // Hide scroll notification
+        if (!this.state.hideScrollNotification && scrollTop > 100) {
+            this.setState({hideScrollNotification: true})
+        }
 
         // Determine if page should be force scrolled
         if (!this.state.introEnded) {
@@ -210,6 +216,9 @@ class MainPage extends React.PureComponent {
                 {this.state.introEnded
                     ? <div>
                         <button className='MainPage_awards_button' onClick={this.showAwards}>
+                            Awards
+                        </button>
+                        <button className='MainPage_awards_button small' onClick={this.showAwards}>
                             <FA name='plus'/>
                         </button>
                         <button className='MainPage_trailer_button' onClick={this.showTrailer}>
@@ -233,6 +242,9 @@ class MainPage extends React.PureComponent {
                     showPressKit={this.showPressKit}
                 />
 
+                <div className={`MainPage__scrollText ${this.state.hideScrollNotification ? 'hidden' : null}`}>
+                    Scroll to see more...
+                </div>
                 {this.renderModals()}
             </div>
         )
@@ -259,6 +271,9 @@ class MainPage extends React.PureComponent {
                 <div className='MainPage_awards'>
                     <div className='MainPage_awards_bg_circle'/>
                     <button className='MainPage_awards_button white' onClick={this.hideAwards}>
+                        Back
+                    </button>
+                    <button className='MainPage_awards_button small white' onClick={this.hideAwards}>
                         <FA name='times'/>
                     </button>
                     <div className='MaiPage_awards_list'>

@@ -16,22 +16,22 @@ class About extends React.PureComponent {
                         <div className='About_title'>ABOUT</div>
                         <div className='About_title_whitespace'/>
                         <div className='About_text'>
-                            The Ministry of Broadcast is narrative-drive indie game, currently being developed in the Czech
-                            Republic,
-                            by 4 people who share the same ideals, dreams, visions and love for internet profanity. It is
-                            scheduled for release in end 2019 on Windows, Mac and Nintendo Switch. This single-player pixel
-                            art
-                            platformer is inspired by the cinematic pieces like the original Prince of Persia (1989) and
-                            Oddworld: Abe’s Exoddus. The overall mood and tone is dark like Orwell’s 1984 combined with the
-                            hypocritical shine and glamour of the modern TV reality shows. Even though it is touching some
-                            of
-                            the dark themes, this game is fun, sarcastic and it plays a joke not just on the game
-                            characters,
-                            but also on the gamers.<br/><br/>
-                            MoB Creative direction, as Regime, is very strict and well thought through. In order to make it
-                            strongly recognisable and in line with the story - we have combined Russian and Czech
-                            avant-garde
-                            with beautiful vintage art from advertising posters for Swiss Alps and its color codes.
+                            <span className='bold'>Ministry of Broadcast</span> is a narrative-driven cinematic
+                            platformer. currently being developed
+                            in the Czech Republic by four people who share the same ideals, dreams, visions, and love
+                            for internet profanity. This is our first game and we have been working on it for a very
+                            long time, and it is now finally scheduled for release in late-2019 on Nintendo Switch, PS4,
+                            and Steam (PC & Mac). Inspired by titles like the original Prince of Persia (1989) and
+                            Oddworld: Abe’s Exoddus, the overall mood and tone is a dark hybrid of Orwell’s 1984 and the
+                            hypocritical shine and glamour of modern reality TV. Though both you and the protagonist
+                            will struggle under the weight of a dystopian Regime and its subversive tactics, dutiful
+                            underlings, and deadly obstacles, we’ve packed the game with challenge, sarcasm, and jokes
+                            on all involved. Your crow-friend is going to mock you to your face… a lot.
+                            <br/><br/>
+                            As the Regime would dictate, we have been very strict and meticulous with Ministry of
+                            Broadcast’s creative direction. So that the artstyle is as memorable and recognizable as the
+                            story and gameplay, we have combined Russian and Czech avant-garde with beautiful vintage
+                            Swiss Alps advertising posters and a very carefully chosen color palette.
                         </div>
                     </div>
                 </section>

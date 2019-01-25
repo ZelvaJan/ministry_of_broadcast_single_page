@@ -123,19 +123,26 @@ class PressKit extends Component {
                                 </div>
                                 <div id={ids.Story} className='PressKit_box'>
                                     <h3>STORY</h3>
-                                    <p className='PressKit_story_text'>The Ministry of Broadcast is narrative-drive
-                                        indie game, currently being
-                                        developed in the Czech Republic and it is scheduled for release in end 2019 on
-                                        Windows, Mac and Nintendo Switch. This single-player pixel art platformer is
-                                        inspired by the cinematic pieces like the original Prince of Persia (1989) and
-                                        Oddworld: Abe’s Exoddus. The overall mood and tone is dark like Orwell’s 1984
-                                        combined with the hypocritical shine and glamour of the modern TV reality shows.
-                                        Even though it is touching some of the dark themes, this game is fun, sarcastic
-                                        and it plays a joke not just on the game characters, but also on the gamers. The
-                                        main Protagonist is a character who has entered the ‘Wall show’ in order to win
-                                        and get back together with his family. However on his way through the camp, he
-                                        realises how The Regime works, and how it can ‘play’ with one’s mind, pun
-                                        intended.</p>
+                                    <p className='PressKit_story_text'><span
+                                        className='bold'>Ministry of Broadcast</span> is a narrative-driven cinematic
+                                        platformer, currently being developed in the Czech Republic by four people who
+                                        share the same ideals, dreams, visions, and love for internet profanity. This is
+                                        our first game and we have been working it for a long time, and it is now
+                                        finally scheduled for release in late-2019 on Nintendo Switch, PS4, and Steam
+                                        (PC & Mac). Inspired by titles like the original Prince of Persia (1989) and
+                                        Oddworld: Abe’s Exoddus, the overall mood and tone is a dark hybrid of Orwell’s
+                                        1984 and the hypocritical shine and glamour of modern reality TV. Though both
+                                        you and the protagonist will struggle under the weight of a dystopian Regime and
+                                        its subversive tactics, dutiful underlings, and deadly obstacles, we’ve packed
+                                        the game with challenge, sarcasm, and jokes on all involved. Your crow-friend is
+                                        going to mock you to your face… a lot.<br/><br/>Seemingly built overnight, The
+                                        Wall has divided both a country in two and a man from his family. To see them
+                                        again, our ginger-haired protagonist has decided to become a contestant on “The
+                                        Wall Show”, a Regime-organized TV show allowing competitors the opportunity to
+                                        escape to freedom on the other side. On his way through the camp though, he
+                                        realises how the Regime and the show operate. The promise of freedom is not
+                                        exactly what it seems.
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -143,13 +150,14 @@ class PressKit extends Component {
                         <div className='PressKit_section'>
                             <div id={ids.CreativeDir} className='PressKit_box PressKit_creativeDir'>
                                 <h3>CREATIVE DIRECTION</h3>
-                                <p>The totalitaristian system is not something new, but our approach to it can be. In
-                                    the world of today, a system like this would hire a good PR agency to rebrand
-                                    itself. Instead of scary red visuals, they would use inviting baby blue. We have
-                                    limited ourselves with the strict color palette, by combining Russian and Czech
-                                    avant-garde with beautiful vintage art from advertising posters for Swiss Alps and
-                                    its color codes. We have a clean level design with high readability and color
-                                    storytelling.</p>
+                                <p>The totalitarian system is not something new, but our approach to it is. In today’s
+                                    world, a government like this would hire a good PR agency to rebrand itself. Instead
+                                    of a classically intimidating deep-red, the Regime has adopted a much softer, more
+                                    inviting baby blue. So that the artstyle is as memorable and recognizable as the
+                                    story and gameplay, we maintain a self-imposed limit with the color palette that
+                                    combines Russian and Czech avant-garde with beautiful vintage Swiss Alps advertising
+                                    art. In execution, this allows for Ministry of Broadcast’s clean level design, with
+                                    high legibility, and vibrant storytelling.</p>
                             </div>
                             <div id={ids.LogoIcon} className='PressKit_box PressKit_logo_wrapper'>
                                 <h3>LOGO</h3>
@@ -175,7 +183,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=0&controls=0&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>
@@ -191,7 +199,7 @@ class PressKit extends Component {
                                            rel="noopener noreferrer">Facebook</a>
                                         <a href="https://twinpetes.com/" target='_blank'
                                            rel="noopener noreferrer">DevBlog</a>
-                                        <a href="https://discord.gg/QnG3AHg" target='_blank'
+                                        <a href="https://discord.gg/hitcents" target='_blank'
                                            rel="noopener noreferrer">Discord</a>
                                     </div>
                                 </div>

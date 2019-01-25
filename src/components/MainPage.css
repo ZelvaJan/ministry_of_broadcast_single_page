@@ -7,6 +7,35 @@
     padding-bottom: 8px;
 }
 
+
+@keyframes fadeOutToNone {
+    0% {
+        opacity: 1
+    }
+    99% {
+        opacity: 0
+    }
+    100% {
+        display: none;
+        opacity: 0;
+    }
+}
+
+.MainPage__scrollText {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    opacity: 1;
+    color: #1d3f53;
+    font-weight: bold;
+}
+
+.MainPage__scrollText.hidden {
+    animation: fadeOutToNone 0.5s ease-out forwards;
+}
+
 .MainPage_trailer {
     position: fixed;
     width: 100%;
@@ -16,6 +45,7 @@
     z-index: 9999;
     background: url("../assets/bg_tile.png") repeat;
 }
+
 .MainPage_trailer_bg_circle {
     position: absolute;
     width: 100%;
@@ -46,6 +76,7 @@
     align-items: center;
     background: url("../assets/bg_tile.png") repeat;
 }
+
 .MainPage_awards_bg_circle {
     position: absolute;
     width: 100%;
@@ -104,7 +135,7 @@
     font-size: 16px;
     text-transform: uppercase;
     padding: 10px 0;
-    width: 50px;
+    width: 130px;
     transition: all 200ms ease-in-out 0s;
     cursor: pointer;
     outline: none;
@@ -123,36 +154,14 @@
     color: #f6f9e8;
 }
 
-.MainPage_trailer_button.small {
+.MainPage_awards_button.small, .MainPage_trailer_button.small {
     width: 50px;
     display: none;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
     .MainPage_awards_button {
-        right: 80px;
-    }
-
-    .MainPage_trailer_button {
-        display: none;
-    }
-    .MainPage_trailer_button.small {
-        display: block;
-    }
-}
-
-@media (max-width: 1000px) {
-    .MainPage_awards_button {
-        top: 48px;
-        right: 80px;
-    }
-
-    .MainPage_trailer_button {
-        display: none;
-    }
-    .MainPage_trailer_button.small {
-        top: 48px;
-        display: block;
+        left: 18px;
     }
 }
 
@@ -172,24 +181,19 @@
         width: 80%;
         height: 70%;
     }
+
+    .MainPage_awards_button, .MainPage_trailer_button {
+        display: none;
+    }
+
+    .MainPage_awards_button.small, .MainPage_trailer_button.small {
+        top: 48px;
+        display: block;
+    }
 }
 
-@media (max-width: 800px) {
-    .MainPage_awards_button {
-        top: 100px;
-        right: 80px;
-    }
-    .MainPage_trailer_button.small {
-        top: 100px;
-    }
-}
-
-@media (max-width: 520px) {
-    .MainPage_awards_button {
-        top: 80px;
-        left: 20px;
-    }
-    .MainPage_trailer_button.small {
-        top: 80px;
+@media (max-width: 600px) {
+    .MainPage_awards_button.small, .MainPage_trailer_button.small {
+        top: 70px;
     }
 }
