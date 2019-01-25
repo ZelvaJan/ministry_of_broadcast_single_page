@@ -2,19 +2,21 @@ import React from 'react';
 import './Press.css';
 import crowSprite from '../../assets/crow_dance.png';
 
-import asScore from '../../assets/logos/score.svg';
-import asSector from '../../assets/logos/Sector.svg';
-import asIGN from '../../assets/logos/IGN.svg';
-import asVortex from '../../assets/logos/Vortex.svg';
-import asBn from '../../assets/logos/Branding news.svg';
-import asRomero from '../../assets/logos/John Romero Twitter.svg';
-import asNivelOculto from '../../assets/logos/Nivel Occulto.svg';
-import asGamology from '../../assets/logos/Gamology.svg';
-import asBehance from '../../assets/logos/Behance.svg';
-import as80lvl from '../../assets/logos/80.LVL.svg';
 import {EPage} from "../MainPage";
 import SpriteSheet from "../utils/Spritesheet";
 import PropTypes from "prop-types";
+import {
+    svg80lvl,
+    svgBehance,
+    svgBN,
+    svgGamology,
+    svgIGN,
+    svgNivelOculto,
+    svgRomero,
+    svgScore,
+    svgSector,
+    svgVortex
+} from "../utils/logos";
 
 
 class Press extends React.PureComponent {
@@ -34,45 +36,63 @@ class Press extends React.PureComponent {
                     <div className='Press_texts'>
                         <div className='Press_title'>PRESS</div>
                         <div className='Press_list'>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://cz.ign.com/game-access-2018/7989/feature/game-access-2018-je-za-nami-a-ukazal-nam-nadherne-veci">
+                                <p>“MoB, Best gameplay award”</p>
+                                <label>IGN</label>
+                                {svgIGN()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://www.facebook.com/GamologyTrailers.Kelinetwork/videos/ministry-of-broadcast-gamology-news/938208233049795/">
+                                <p>“An indie game with unique atmosphere”</p>
+                                <label>Gamology</label>
+                                {svgGamology()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://www.branding.news/2018/10/24/ministry-of-broadcast-from-pixel-art-to-collectable-art/">
+                                <p>“From Pixel Art to Collectable Art”</p>
+                                <label>Branding news</label>
+                                {svgBN()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://twitter.com/romero/status/1003266679458156544">
+                                <p>“Great job on the game, it’s fun and funny!”</p>
+                                <label>John Romero</label>
+                                {svgRomero()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://niveloculto.com/ministry-of-broadcast-la-distopia-televisada/">
+                                <p>“MoB - The televised dystopia”</p>
+                                <label>Nivel Oculto</label>
+                                {svgNivelOculto()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://www.vortex.cz/databaze/ministry-of-broadcast/">
+                                <p>“An unexpected surprise from Czechia”</p>
+                                <label>Vortex</label>
+                                {svgVortex()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://www.behance.net/gallery/70251671/Ministry-of-Broadcast-Collectable-Art-figure">
+                                <p>Featured in<br/>Game Design</p>
+                                <label>Behance</label>
+                                {svgBehance()}
+                            </a>
+                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
+                               href="https://80.lv/articles/ministry-of-broadcast-pixel-totalitarianism/">
+                                <p>“An awesome new game, with killer animations”</p>
+                                <label>80Lvl</label>
+                                {svg80lvl()}
+                            </a>
                             <div className='Press_list_item'>
                                 <p>“Stylish graphics, logical puzzles, pleasant gameplay”</p>
-                                <img src={asScore} alt='Score magazine'/>
+                                <label>Score magazine</label>
+                                {svgScore()}
                             </div>
                             <div className='Press_list_item'>
                                 <p>“Best Game at Game Access 2018”</p>
-                                <img src={asSector} alt='Sector'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“MoB, Best gameplay award”</p>
-                                <img src={asIGN} alt='IGN'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“An unexpected surprise from Czechia”</p>
-                                <img src={asVortex} alt='Vortex'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“From Pixel Art to Collectable Art”</p>
-                                <img src={asBn} alt='Branding news'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“Great job on the game, it’s fun and funny!”</p>
-                                <img src={asRomero} alt='John Romero'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“MoB - The televised dystopia”</p>
-                                <img src={asNivelOculto} alt='Nivel Oculto'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“An indie game with unique atmosphere”</p>
-                                <img src={asGamology} alt='Gamology'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>Featured in<br/>Game Design</p>
-                                <img src={asBehance} alt='Behance'/>
-                            </div>
-                            <div className='Press_list_item'>
-                                <p>“An awesome new game, with killer animations”</p>
-                                <img src={as80lvl} alt='80Lvl'/>
+                                <label>Sector</label>
+                                {svgSector()}
                             </div>
                         </div>
                         <div className='Press_wishList_wrapper'>

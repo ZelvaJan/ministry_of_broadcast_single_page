@@ -46,7 +46,7 @@ class PressKit extends Component {
     moveTo = (elementId) => {
         try {
             const element = document.getElementById(elementId);
-            element.scrollIntoView({ behavior: 'smooth' });
+            element.scrollIntoView({behavior: 'smooth'});
         } catch (e) {
             handleErrors(e);
         }
@@ -221,23 +221,31 @@ class PressKit extends Component {
                             <div id={ids.Team} className='PressKit_box PressKit_team '>
                                 <h3>THE TEAM</h3>
                                 <h4>Core Team:</h4>
-                                <a href="https://www.linkedin.com/in/petr-melicher%C3%ADk-96a75198/" target='_blank' rel="noopener noreferrer">Petr Melicherík</a>
+                                <a href="https://www.linkedin.com/in/petr-melicher%C3%ADk-96a75198/" target='_blank'
+                                   rel="noopener noreferrer">Petr Melicherík</a>
                                 <p>Development, Mechanics, Game & Level design, Dialogues, Story</p>
-                                <a href="https://www.linkedin.com/in/skornok/" target='_blank' rel="noopener noreferrer">Petr Škorňok</a>
+                                <a href="https://www.linkedin.com/in/skornok/" target='_blank'
+                                   rel="noopener noreferrer">Petr Škorňok</a>
                                 <p>Development, Story, Game & Level design</p>
-                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Sanja Čežek</a>
+                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Sanja
+                                    Čežek</a>
                                 <p>Art direction, Branding, UX/UI, Story, Illustration, Game & Level design</p>
-                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Dušan Čežek</a>
+                                <a href="https://www.fuchsdachs.com" target='_blank' rel="noopener noreferrer">Dušan
+                                    Čežek</a>
                                 <p>Creative direction, Illustration, Animation, Story, Game & Level design</p>
 
                                 <h4>Collaborators:</h4>
-                                <a href="https://www.artstation.com/pyrohyper" target='_blank' rel="noopener noreferrer">Marko Stanojević</a>
+                                <a href="https://www.artstation.com/pyrohyper" target='_blank'
+                                   rel="noopener noreferrer">Marko Stanojević</a>
                                 <p>Animation</p>
-                                <a href="https://www.linkedin.com/in/emilgasparec" target='_blank' rel="noopener noreferrer">Emil Gašparec</a>
+                                <a href="https://www.linkedin.com/in/emilgasparec" target='_blank'
+                                   rel="noopener noreferrer">Emil Gašparec</a>
                                 <p>Development, Level design</p>
-                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Anita Kudličková, Ambit</a>
+                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Anita
+                                    Kudličková, Ambit</a>
                                 <p>Sound design, SFX</p>
-                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Radek Nikl, Ambit</a>
+                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Radek
+                                    Nikl, Ambit</a>
                                 <p>Music composition, Sound design, SFX</p>
                             </div>
                             <div id={ids.Awards} className='PressKit_box PressKit_awards'>
@@ -279,31 +287,28 @@ class PressKit extends Component {
 
                                     <p>”Best Gameplay Award winner”, <a
                                         href="https://cz.ign.com/game-access-2018/7989/feature/game-access-2018-je-za-nami-a-ukazal-nam-nadherne-veci"
-                                        target='_blank'
-                                        rel="noopener noreferrer">IGN CZ</a></p>
+                                        target='_blank' rel="noopener noreferrer">IGN CZ</a></p>
                                     <p>”The televised dystopia”, <a
                                         href="https://niveloculto.com/ministry-of-broadcast-la-distopia-televisada/"
-                                        target='_blank'
-                                        rel="noopener noreferrer">NIVEL OCULTO</a></p>
+                                        target='_blank' rel="noopener noreferrer">NIVEL OCULTO</a></p>
                                     <p>”An awesome new game, with killer animations”, <a
                                         href="https://80.lv/articles/ministry-of-broadcast-pixel-totalitarianism/"
-                                        target='_blank'
-                                        rel="noopener noreferrer">80.lvl</a>
+                                        target='_blank' rel="noopener noreferrer">80.lvl</a>
                                     </p>
                                     <p>”From Pixel Art to Collectable Art”, <a
                                         href="https://www.branding.news/2018/10/24/ministry-of-broadcast-from-pixel-art-to-collectable-art/"
-                                        target='_blank'
-                                        rel="noopener noreferrer">BRANDING
-                                        NEWS</a></p>
+                                        target='_blank' rel="noopener noreferrer">BRANDING NEWS</a></p>
                                     <p>”An unexpected surprise coming from the Czech Republic”, <a
                                         href="https://www.vortex.cz/databaze/ministry-of-broadcast/"
-                                        target='_blank'
-                                        rel="noopener noreferrer">VORTEX</a>
+                                        target='_blank' rel="noopener noreferrer">VORTEX</a>
                                     </p>
                                     <p>”A brand new indie game with unique atmosphere”, <a
                                         href="https://www.facebook.com/GamologyTrailers.Kelinetwork/videos/ministry-of-broadcast-gamology-news/938208233049795/"
-                                        target='_blank'
-                                        rel="noopener noreferrer">GAMOLOGY</a>
+                                        target='_blank' rel="noopener noreferrer">GAMOLOGY</a>
+                                    </p>
+                                    <p>Featured in Game Design, <a
+                                        href="https://www.behance.net/gallery/70251671/Ministry-of-Broadcast-Collectable-Art-figure"
+                                        target='_blank' rel="noopener noreferrer">Behance</a>
                                     </p>
                                 </div>
                                 <div className='PressKit_box PressKit_download'>

@@ -42,16 +42,32 @@
 }
 
 .Press_list_item {
+    display: block;
     flex: 1 1 204px;
     margin: 10px;
     text-align: center;
     color: #4a9a96;
     max-width: 280px;
 }
-
-.Press_list_item img {
-    max-height: 26px;
+.Press_list_item.link {
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    outline: none;
 }
+.Press_list_item.link:hover, .Press_list_item.link:hover svg {
+    color: #d13715;
+    fill: #d13715;
+}
+.Press_list_item label {
+    display: none;
+}
+.Press_list_item svg {
+    max-height: 26px;
+    color: #4a9a96;
+    fill: #4a9a96;
+    transition: all 200ms ease-in-out 0s;
+}
+
 
 .Press_wishList_wrapper {
     display: inline-block;
