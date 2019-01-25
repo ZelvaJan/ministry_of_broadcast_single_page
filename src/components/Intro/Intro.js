@@ -12,19 +12,19 @@ class Intro extends React.PureComponent {
                 </div>
 
                 <div className='Intro_section Intro_section_left'>
-                    <p className='Intro_text'>TO CROSS IT AND REACH YOUR FAMILY ...</p>
+                    <p className='Intro_text'>TO CROSS IT AND REACH YOUR FAMILY,</p>
                 </div>
 
                 <div className='Intro_section Intro_section_right'>
-                    <p className='Intro_text'>YOU MUST WIN IN A<br/>REALITY TV SHOW<br/>BROADCAST BY THE REGIME.</p>
+                    <p className='Intro_text'>YOU MUST<br/>COMPETE ON...</p>
                 </div>
 
                 <div className='Intro_section Intro_section_left'>
-                    <p className='Intro_text'>A NARRATIVE-DRIVEN<br/>SINGLE PLAYER<br/>CINEMATIC PLATFORMER ...</p>
+                    <p className='Intro_text'>AND WIN A REALITY<br/>TV SHOW</p>
                 </div>
 
                 <div className='Intro_section Intro_section_right'>
-                    <p className='Intro_text'>MIXING ORWELL’S 1984 WITH MODERN REALITY TV.</p>
+                    <p className='Intro_text'>BROADCAST BY THE REGIME.</p>
                 </div>
             </div>
         )

@@ -16,17 +16,16 @@ class About extends React.PureComponent {
                         <div className='About_title'>ABOUT</div>
                         <div className='About_title_whitespace'/>
                         <div className='About_text'>
-                            <span className='bold'>Ministry of Broadcast</span> is a narrative-driven cinematic
-                            platformer. currently being developed
-                            in the Czech Republic by four people who share the same ideals, dreams, visions, and love
-                            for internet profanity. This is our first game and we have been working on it for a very
-                            long time, and it is now finally scheduled for release in late-2019 on Nintendo Switch, PS4,
+                            <span className='bold'>Ministry of Broadcast</span> is a
+                            narrative-driven cinematic platformer. currently being developed in the Czech Republic by
+                            four people who share the same ideals, dreams, visions, and love for internet profanity.
+                            This is our first game and it is scheduled for release in late-2019 on Nintendo Switch, PS4,
                             and Steam (PC & Mac). Inspired by titles like the original Prince of Persia (1989) and
                             Oddworld: Abe’s Exoddus, the overall mood and tone is a dark hybrid of Orwell’s 1984 and the
                             hypocritical shine and glamour of modern reality TV. Though both you and the protagonist
                             will struggle under the weight of a dystopian Regime and its subversive tactics, dutiful
                             underlings, and deadly obstacles, we’ve packed the game with challenge, sarcasm, and jokes
-                            on all involved. Your crow-friend is going to mock you to your face… a lot.
+                            on all involved. Your crow-friend is going to mock you to your face... a lot.
                             <br/><br/>
                             As the Regime would dictate, we have been very strict and meticulous with Ministry of
                             Broadcast’s creative direction. So that the artstyle is as memorable and recognizable as the
