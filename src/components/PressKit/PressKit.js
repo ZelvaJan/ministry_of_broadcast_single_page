@@ -183,7 +183,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/a64MUU0RgoQ?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/z_MnRheEnQ4?modestbranding=1&autoplay=1&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>
