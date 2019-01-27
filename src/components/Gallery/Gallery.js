@@ -4,18 +4,18 @@ import './Gallery.css';
 import Slider from "react-slick";
 import {EPage} from "../MainPage";
 
-import img1 from '../../assets/gallery/1.png';
-import img2 from '../../assets/gallery/2.png';
-import img3 from '../../assets/gallery/3.png';
-import img4 from '../../assets/gallery/4.png';
-import img5 from '../../assets/gallery/5.png';
-import img51 from '../../assets/gallery/5.jpg';
-import img6 from '../../assets/gallery/6.png';
-import img7 from '../../assets/gallery/7.png';
-import img8 from '../../assets/gallery/8.jpg';
-import img9 from '../../assets/gallery/9.png';
-import img20 from '../../assets/gallery/20.jpg';
-import figure from '../../assets/gallery/figure.jpg';
+import img1 from '../../assets/gallery/Gallery_1.png';
+import img2 from '../../assets/gallery/Gallery_2.png';
+import img3 from '../../assets/gallery/Gallery_3.png';
+import img4 from '../../assets/gallery/Gallery_4.png';
+import img5 from '../../assets/gallery/Gallery_5.png';
+import img6 from '../../assets/gallery/Gallery_6.png';
+import img7 from '../../assets/gallery/Gallery_7.png';
+import img8 from '../../assets/gallery/Gallery_8.png';
+import img9 from '../../assets/gallery/Gallery_9.png';
+import img10 from '../../assets/gallery/Gallery_10.jpg';
+import img11 from '../../assets/gallery/Gallery_11.png';
+import img12 from '../../assets/gallery/Gallery_12.png';
 
 const aspectRatio = 1.778;
 let currIndex = 0;
@@ -115,13 +115,13 @@ class Gallery extends React.PureComponent {
                             {this.renderGalleryCard(i++, img3)}
                             {this.renderGalleryCard(i++, img4)}
                             {this.renderGalleryCard(i++, img5)}
-                            {this.renderGalleryCard(i++, img51)}
                             {this.renderGalleryCard(i++, img6)}
                             {this.renderGalleryCard(i++, img7)}
                             {this.renderGalleryCard(i++, img8)}
                             {this.renderGalleryCard(i++, img9)}
-                            {this.renderGalleryCard(i++, img20)}
-                            {this.renderGalleryCard(i, figure)}
+                            {this.renderGalleryCard(i++, img10)}
+                            {this.renderGalleryCard(i++, img11)}
+                            {this.renderGalleryCard(i, img12)}
                         </Slider>
                     </div>
                 </div>

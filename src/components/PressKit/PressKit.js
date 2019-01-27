@@ -8,19 +8,19 @@ import icon from '../../assets/icon.png';
 import MoB_press_kit from '../../assets/PressKit/MoB_press_kit.zip';
 
 // Images
-import img1 from '../../assets/gallery/1.png';
-import img2 from '../../assets/gallery/2.png';
-import img3 from '../../assets/gallery/3.png';
-import img4 from '../../assets/gallery/4.png';
-import img5 from '../../assets/gallery/5.png';
-import img51 from '../../assets/gallery/5.jpg';
-import img6 from '../../assets/gallery/6.png';
-import img7 from '../../assets/gallery/7.png';
-import img8 from '../../assets/gallery/8.jpg';
-import img9 from '../../assets/gallery/9.png';
-import img20 from '../../assets/gallery/20.jpg';
-import basecampGif from '../../assets/gallery/basecamp.gif';
-import figure from '../../assets/gallery/figure.jpg';
+import img1 from '../../assets/gallery/Gallery_1.png';
+import img2 from '../../assets/gallery/Gallery_2.png';
+import img3 from '../../assets/gallery/Gallery_3.png';
+import img4 from '../../assets/gallery/Gallery_4.png';
+import img5 from '../../assets/gallery/Gallery_5.png';
+import img6 from '../../assets/gallery/Gallery_6.png';
+import img7 from '../../assets/gallery/Gallery_7.png';
+import img8 from '../../assets/gallery/Gallery_8.png';
+import img9 from '../../assets/gallery/Gallery_9.png';
+import img10 from '../../assets/gallery/Gallery_10.jpg';
+import img11 from '../../assets/gallery/Gallery_11.png';
+import img12 from '../../assets/gallery/Gallery_12.png';
+
 import PropTypes from "prop-types";
 import {handleErrors} from "../../App";
 
@@ -183,7 +183,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/z_MnRheEnQ4?modestbranding=1&autoplay=1&controls=1&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/z_MnRheEnQ4?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>
@@ -208,19 +208,18 @@ class PressKit extends Component {
                             <div id={ids.Images} className='PressKit_box PressKit_images'>
                                 <h3>IMAGES</h3>
                                 <div className='PressKit_images_list'>
-                                    {PressKit.renderImage(basecampGif)}
-                                    {PressKit.renderImage(img7)}
-                                    {PressKit.renderImage(img8)}
-                                    {PressKit.renderImage(img9)}
                                     {PressKit.renderImage(img1)}
+                                    {PressKit.renderImage(img12)}
                                     {PressKit.renderImage(img2)}
+                                    {PressKit.renderImage(img11)}
                                     {PressKit.renderImage(img3)}
                                     {PressKit.renderImage(img4)}
                                     {PressKit.renderImage(img5)}
-                                    {PressKit.renderImage(img51)}
                                     {PressKit.renderImage(img6)}
-                                    {PressKit.renderImage(img20)}
-                                    {PressKit.renderImage(figure)}
+                                    {PressKit.renderImage(img7)}
+                                    {PressKit.renderImage(img8)}
+                                    {PressKit.renderImage(img9)}
+                                    {PressKit.renderImage(img10)}
                                 </div>
                             </div>
                         </div>
