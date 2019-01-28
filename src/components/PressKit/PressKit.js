@@ -129,9 +129,10 @@ class PressKit extends Component {
                                         share the same ideals, dreams, visions, and love for internet profanity. This is
                                         our first game and we have been working it for a long time, and it is now
                                         finally scheduled for release in late-2019 on Nintendo Switch, PS4, and Steam
-                                        (PC & Mac). Inspired by titles like the original Prince of Persia (1989) and
-                                        Oddworld: Abe’s Exoddus, the overall mood and tone is a dark hybrid of Orwell’s
-                                        1984 and the hypocritical shine and glamour of modern reality TV. Though both
+                                        (PC & Mac). Inspired by titles like the original <span className='italic'>Prince of Persia</span> (1989)
+                                        and <span className='italic'>Oddworld: Abe’s Exoddus</span>, the overall mood and
+                                        tone is a dark hybrid of Orwell’s <span className='italic'>1984</span> and the
+                                        hypocritical shine and glamour of modern reality TV. Though both
                                         you and the protagonist will struggle under the weight of a dystopian Regime and
                                         its subversive tactics, dutiful underlings, and deadly obstacles, we’ve packed
                                         the game with challenge, sarcasm, and jokes on all involved. Your crow-friend is
@@ -183,7 +184,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/z_MnRheEnQ4?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/W_cM3lKUK9Q?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>

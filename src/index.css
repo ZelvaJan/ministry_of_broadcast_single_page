@@ -67,6 +67,10 @@ code {
     font-weight: bold;
 }
 
+.italic {
+    font-style: italic;
+}
+
 .hidden {
     display: none;
 }
