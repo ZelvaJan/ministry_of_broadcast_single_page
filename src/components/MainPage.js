@@ -23,6 +23,7 @@ import Logo from "./Logo/Logo";
 import PressKit from "./PressKit/PressKit";
 import PropTypes from "prop-types";
 import {setBodyScrollBarVisible} from "./utils/Utils";
+import {getURLParameter} from "../App";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -56,6 +57,11 @@ class MainPage extends React.PureComponent {
     constructor() {
         super();
 
+        let openPressKit = !!getURLParameter("pressKit");
+        if (openPressKit) {
+            setBodyScrollBarVisible(false);
+        }
+
         this.state = {
             page: EPage.HomePage,
             hideScrollNotification: false,
@@ -63,7 +69,7 @@ class MainPage extends React.PureComponent {
             logoUp: false,
             isTrailerVisible: false,
             isAwardsVisible: false,
-            isPressKitOpen: false
+            isPressKitOpen: openPressKit
         };
 
         this.forceScrollTimer = null;
