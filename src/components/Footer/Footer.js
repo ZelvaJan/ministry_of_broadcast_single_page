@@ -9,6 +9,7 @@ import asTwitterActive from '../../assets/logos/Social_Twitter_active.svg';
 import asSteam from '../../assets/logos/Social_Steam.svg';
 import asSteamActive from '../../assets/logos/Social_Steam_active.svg';
 import PropTypes from "prop-types";
+import {EPage} from "../MainPage";
 
 class Footer extends React.PureComponent {
 
@@ -32,7 +33,7 @@ class Footer extends React.PureComponent {
     render() {
 
         return (
-            <div className='Footer_root'>
+            <div id={EPage.Contact} className='Footer_root'>
                 <div className='Footer_tower'/>
 
                 <div className='Footer_content'>

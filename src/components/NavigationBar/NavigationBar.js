@@ -27,6 +27,7 @@ class NavigationBar extends React.PureComponent {
         return (
             <div id={ids.NavigationBar} className='NavigationBar_root'>
                 <div className='NavigationBar_menu'>
+                    {this.renderMenuItem(EPage.Contact, "Contact")}
                     {this.renderMenuItem(EPage.Press, "Press")}
                     {this.renderMenuItem(EPage.Gallery, "Gallery")}
                     {this.renderMenuItem(EPage.About, "About")}

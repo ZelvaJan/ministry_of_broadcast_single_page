@@ -61,3 +61,10 @@
         padding: 10px 6px 10px 8px;
     }
 }
+
+@media (max-height: 520px) {
+    .NavigationBar_menu div {
+        padding: 6px 6px 6px 8px;
+        font-size: 13px;
+    }
+}

@@ -28,7 +28,8 @@ export const EPage = {
     HomePage: 'HomePage',
     About: 'AboutPage',
     Gallery: 'GalleryPage',
-    Press: 'PressPage'
+    Press: 'PressPage',
+    Contact: 'Contact'
 };
 export const ids = {
     NavigationBar: 'NavigationBarId',
@@ -135,8 +136,10 @@ class MainPage extends React.PureComponent {
                 }
             }
         } else { // Update navigation on scroll position
-            const relativeScrollTop = scrollTop + 300;
-            if (relativeScrollTop > document.getElementById(EPage.Press).offsetTop) {
+            const relativeScrollTop = scrollTop + (window.innerHeight / 2);
+            if (relativeScrollTop + 120 > (document.getElementById(EPage.Contact).offsetTop) ) {
+                this.setState({page: EPage.Contact});
+            } else if (relativeScrollTop > document.getElementById(EPage.Press).offsetTop) {
                 this.setState({page: EPage.Press});
             } else if (relativeScrollTop > document.getElementById(EPage.Gallery).offsetTop) {
                 this.setState({page: EPage.Gallery});
