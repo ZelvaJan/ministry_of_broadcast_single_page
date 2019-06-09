@@ -249,11 +249,7 @@ class PressKit extends Component {
                                 <a href="https://www.linkedin.com/in/emilgasparec" target='_blank'
                                    rel="noopener noreferrer">Emil Gašparec</a>
                                 <p>Development, Level design</p>
-                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Anita
-                                    Kudličková, Ambit</a>
-                                <p>Sound design, SFX</p>
-                                <a href="https://bandzone.cz/ambit" target='_blank' rel="noopener noreferrer">Radek
-                                    Nikl, Ambit</a>
+                                <a href="https://www.linkedin.com/in/benjamin-mcculloch/" target='_blank' rel="noopener noreferrer">Ben McCulloch</a>
                                 <p>Music composition, Sound design, SFX</p>
                             </div>
                             <div id={ids.Awards} className='PressKit_box PressKit_awards'>
@@ -320,7 +316,7 @@ class PressKit extends Component {
                                     </p>
                                 </div>
                                 <div className='PressKit_box PressKit_download'>
-                                    <a href={MoB_press_kit} download="MoB_press_kit">DOWNLOAD PRESS KIT</a>
+                                    <a href={MoB_press_kit} download="MoB_press_kit.zip">DOWNLOAD PRESS KIT</a>
                                 </div>
                             </div>
                         </div>

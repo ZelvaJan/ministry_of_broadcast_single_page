@@ -252,7 +252,7 @@ class MainPage extends React.PureComponent {
                 />
 
                 <div className={`MainPage__scrollText ${this.state.hideScrollNotification ? 'hidden' : null}`}>
-                    Scroll to see more...
+                    Scroll to see more
                 </div>
                 {this.renderModals()}
             </div>
