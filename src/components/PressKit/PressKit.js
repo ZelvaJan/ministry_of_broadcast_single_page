@@ -20,6 +20,16 @@ import img9 from '../../assets/gallery/Gallery_9.png';
 import img10 from '../../assets/gallery/Gallery_10.jpg';
 import img11 from '../../assets/gallery/Gallery_11.png';
 import img12 from '../../assets/gallery/Gallery_12.png';
+import img13 from '../../assets/gallery/Gallery_13.png';
+import img14 from '../../assets/gallery/Gallery_14.png';
+import img15 from '../../assets/gallery/Gallery_15.png';
+import img16 from '../../assets/gallery/Gallery_16.png';
+import img17 from '../../assets/gallery/Gallery_17.png';
+import img18 from '../../assets/gallery/Gallery_18.png';
+import img19 from '../../assets/gallery/Gallery_19.png';
+import img20 from '../../assets/gallery/Gallery_20.png';
+import img21 from '../../assets/gallery/Gallery_21.png';
+import img22 from '../../assets/gallery/Gallery_22.png';
 
 import PropTypes from "prop-types";
 import {handleErrors} from "../../App";
@@ -97,7 +107,7 @@ class PressKit extends Component {
                                         </div>
                                         <div>
                                             <h4>Release Date:</h4>
-                                            <p>End 2019</p>
+                                            <p>January 30, 2020</p>
                                         </div>
                                         <div>
                                             <h4>Platforms:</h4>
@@ -128,10 +138,10 @@ class PressKit extends Component {
                                         platformer, currently being developed in the Czech Republic by four people who
                                         share the same ideals, dreams, visions, and love for internet profanity. This is
                                         our first game and we have been working it for a long time, and it is now
-                                        finally scheduled for release in late-2019 on Nintendo Switch, PS4, and Steam
-                                        (PC & Mac). Inspired by titles like the original <span className='italic'>Prince of Persia</span> (1989)
-                                        and <span className='italic'>Oddworld: Abe’s Exoddus</span>, the overall mood and
-                                        tone is a dark hybrid of Orwell’s <span className='italic'>1984</span> and the
+                                        finally scheduled for release in early 2020 on Nintendo Switch and Steam (PC &
+                                        Mac). Inspired by titles like the original <span className='italic'>Prince of Persia</span> (1989)
+                                        and <span className='italic'>Oddworld: Abe’s Exoddus</span>, the overall mood
+                                        and tone is a dark hybrid of Orwell’s <span className='italic'>1984</span> and the
                                         hypocritical shine and glamour of modern reality TV. Though both
                                         you and the protagonist will struggle under the weight of a dystopian Regime and
                                         its subversive tactics, dutiful underlings, and deadly obstacles, we’ve packed
@@ -184,7 +194,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/W_cM3lKUK9Q?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/G4W-gyLFFB4?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>
@@ -221,6 +231,16 @@ class PressKit extends Component {
                                     {PressKit.renderImage(img8)}
                                     {PressKit.renderImage(img9)}
                                     {PressKit.renderImage(img10)}
+                                    {PressKit.renderImage(img13)}
+                                    {PressKit.renderImage(img14)}
+                                    {PressKit.renderImage(img15)}
+                                    {PressKit.renderImage(img16)}
+                                    {PressKit.renderImage(img17)}
+                                    {PressKit.renderImage(img18)}
+                                    {PressKit.renderImage(img19)}
+                                    {PressKit.renderImage(img20)}
+                                    {PressKit.renderImage(img21)}
+                                    {PressKit.renderImage(img22)}
                                 </div>
                             </div>
                         </div>
@@ -249,7 +269,8 @@ class PressKit extends Component {
                                 <a href="https://www.linkedin.com/in/emilgasparec" target='_blank'
                                    rel="noopener noreferrer">Emil Gašparec</a>
                                 <p>Development, Level design</p>
-                                <a href="https://www.linkedin.com/in/benjamin-mcculloch/" target='_blank' rel="noopener noreferrer">Ben McCulloch</a>
+                                <a href="https://www.linkedin.com/in/benjamin-mcculloch/" target='_blank'
+                                   rel="noopener noreferrer">Ben McCulloch</a>
                                 <p>Music composition, Sound design, SFX</p>
                             </div>
                             <div id={ids.Awards} className='PressKit_box PressKit_awards'>
@@ -292,6 +313,9 @@ class PressKit extends Component {
                                     <p>”Best Gameplay Award winner”, <a
                                         href="https://cz.ign.com/game-access-2018/7989/feature/game-access-2018-je-za-nami-a-ukazal-nam-nadherne-veci"
                                         target='_blank' rel="noopener noreferrer">IGN CZ</a></p>
+                                    <p>”Shaping to be one of the best indie games of the year”, <a
+                                        href="https://www.thegamer.com/ministry-of-broadcast-preview/"
+                                        target='_blank' rel="noopener noreferrer">THE GAMER</a></p>
                                     <p>”The televised dystopia”, <a
                                         href="https://niveloculto.com/ministry-of-broadcast-la-distopia-televisada/"
                                         target='_blank' rel="noopener noreferrer">NIVEL OCULTO</a></p>
@@ -307,7 +331,7 @@ class PressKit extends Component {
                                         target='_blank' rel="noopener noreferrer">VORTEX</a>
                                     </p>
                                     <p>”A brand new indie game with unique atmosphere”, <a
-                                        href="https://www.facebook.com/GamologyTrailers.Kelinetwork/videos/ministry-of-broadcast-gamology-news/938208233049795/"
+                                        href="https://www.facebook.com/watch/?v=938217273048891"
                                         target='_blank' rel="noopener noreferrer">GAMOLOGY</a>
                                     </p>
                                     <p>Featured in Game Design, <a

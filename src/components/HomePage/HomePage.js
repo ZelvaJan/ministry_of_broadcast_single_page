@@ -170,7 +170,7 @@ class HomePage extends React.PureComponent {
                 />
 
                 <section className='HomePage_release_wrapper'>
-                    <div className='HomePage_release_time'>RELEASE END 2019</div>
+                    <div className='HomePage_release_time'>RELEASE JANUARY 30</div>
                     <div className='HomePage_release_platforms'>
                         <img src={asSteam} alt='Steam platform'/>
                         <img src={asNintendoSwitch} alt='Nintendo switch platform'/>

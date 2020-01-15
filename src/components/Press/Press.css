@@ -36,18 +36,21 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    max-width: 1300px;
-    margin: 20px 50px;
+    max-width: 1320px;
+    margin: 20px 46px 20px 42px;
     color: #1d3f53;
 }
 
 .Press_list_item {
     display: block;
-    flex: 1 1 204px;
+    flex: 1 1 206px;
     margin: 10px;
     text-align: center;
     color: #4a9a96;
     max-width: 280px;
+}
+.Press_list_item_wider {
+    flex-basis: 206px;
 }
 .Press_list_item.link {
     text-decoration: none;

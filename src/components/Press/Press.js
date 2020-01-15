@@ -11,11 +11,11 @@ import {
     svgBN,
     svgGamology,
     svgIGN,
-    svgNivelOculto,
     svgRomero,
     svgScore,
     svgSector,
-    svgVortex
+    svgVortex,
+    svgTheGamer
 } from "../utils/logos";
 
 
@@ -43,7 +43,7 @@ class Press extends React.PureComponent {
                                 {svgIGN()}
                             </a>
                             <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
-                               href="https://www.facebook.com/GamologyTrailers.Kelinetwork/videos/ministry-of-broadcast-gamology-news/938208233049795/">
+                               href="https://www.facebook.com/watch/?v=938217273048891">
                                 <p>“An indie game with unique atmosphere”</p>
                                 <label>Gamology</label>
                                 {svgGamology()}
@@ -60,11 +60,11 @@ class Press extends React.PureComponent {
                                 <label>John Romero</label>
                                 {svgRomero()}
                             </a>
-                            <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
-                               href="https://niveloculto.com/ministry-of-broadcast-la-distopia-televisada/">
-                                <p>“MoB - The televised dystopia”</p>
-                                <label>Nivel Oculto</label>
-                                {svgNivelOculto()}
+                            <a className='Press_list_item Press_list_item_wider link' target='_blank' rel="noopener noreferrer"
+                               href="https://www.thegamer.com/ministry-of-broadcast-preview/">
+                                <p>“Shaping to be one of the best indie games of the year”</p>
+                                <label>The Gamer</label>
+                                {svgTheGamer()}
                             </a>
                             <a className='Press_list_item link' target='_blank' rel="noopener noreferrer"
                                href="https://www.vortex.cz/databaze/ministry-of-broadcast/">

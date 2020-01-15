@@ -16,6 +16,16 @@ import img9 from '../../assets/gallery/Gallery_9.png';
 import img10 from '../../assets/gallery/Gallery_10.jpg';
 import img11 from '../../assets/gallery/Gallery_11.png';
 import img12 from '../../assets/gallery/Gallery_12.png';
+import img13 from '../../assets/gallery/Gallery_13.png';
+import img14 from '../../assets/gallery/Gallery_14.png';
+import img15 from '../../assets/gallery/Gallery_15.png';
+import img16 from '../../assets/gallery/Gallery_16.png';
+import img17 from '../../assets/gallery/Gallery_17.png';
+import img18 from '../../assets/gallery/Gallery_18.png';
+import img19 from '../../assets/gallery/Gallery_19.png';
+import img20 from '../../assets/gallery/Gallery_20.png';
+import img21 from '../../assets/gallery/Gallery_21.png';
+import img22 from '../../assets/gallery/Gallery_22.png';
 
 const aspectRatio = 1.778;
 let currIndex = 0;
@@ -121,7 +131,17 @@ class Gallery extends React.PureComponent {
                             {this.renderGalleryCard(i++, img9)}
                             {this.renderGalleryCard(i++, img10)}
                             {this.renderGalleryCard(i++, img11)}
-                            {this.renderGalleryCard(i, img12)}
+                            {this.renderGalleryCard(i++, img12)}
+                            {this.renderGalleryCard(i++, img13)}
+                            {this.renderGalleryCard(i++, img14)}
+                            {this.renderGalleryCard(i++, img15)}
+                            {this.renderGalleryCard(i++, img16)}
+                            {this.renderGalleryCard(i++, img17)}
+                            {this.renderGalleryCard(i++, img18)}
+                            {this.renderGalleryCard(i++, img19)}
+                            {this.renderGalleryCard(i++, img20)}
+                            {this.renderGalleryCard(i++, img21)}
+                            {this.renderGalleryCard(i, img22)}
                         </Slider>
                     </div>
                 </div>

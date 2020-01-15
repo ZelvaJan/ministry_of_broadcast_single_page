@@ -19,7 +19,7 @@ class About extends React.PureComponent {
                             <span className='bold'>Ministry of Broadcast</span> is a narrative-driven cinematic
                             platformer. Currently being developed in the Czech Republic by four people who share the
                             same ideals, dreams, visions, and love for internet profanity. This is our first game and it
-                            is scheduled for release in late-2019 on Nintendo Switch, PS4, and Steam (PC & Mac).
+                            is scheduled for release in early 2020 on Nintendo Switch and Steam (PC & Mac).
                             Inspired by titles like the original <span className='italic'>Prince of Persia</span> (1989)
                             and <span className='italic'>Oddworld: Abe’s Exoddus</span>, the overall mood and tone is a
                             dark hybrid of Orwell’s <span className='italic'>1984</span> and the hypocritical shine and

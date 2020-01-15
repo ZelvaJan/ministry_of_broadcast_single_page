@@ -271,7 +271,7 @@ class MainPage extends React.PureComponent {
                         <FA name='times'/>
                     </button>
                     <iframe className="videoContainer__video" title='Ministry gameplay trailer'
-                            src="https://www.youtube.com/embed/W_cM3lKUK9Q?modestbranding=1&autoplay=1&controls=1&showinfo=0&disablekb=1"
+                            src="https://www.youtube.com/embed/G4W-gyLFFB4?modestbranding=1&autoplay=1&controls=1&showinfo=0&disablekb=1"
                             frameBorder="0"/>
                 </div>
             )
