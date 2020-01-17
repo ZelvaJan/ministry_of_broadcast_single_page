@@ -3,6 +3,7 @@ import './HomePage.css';
 import {EPage} from "../MainPage";
 import asNintendoSwitch from "../../assets/logos/nintendo_switch.svg";
 import asSteam from "../../assets/logos/steam.svg";
+import ratingM from "../../assets/rating_mature.png";
 import snowCleanerAnimations from '../../assets/snow_cleaner_animations_main.png';
 import SpriteSheet from "../utils/Spritesheet";
 
@@ -40,6 +41,7 @@ class HomePage extends React.PureComponent {
                 <div className='HomePage_bg_poster'/>
                 <div className='HomePage_bg_board'/>
                 <div className='HomePage_bg_tower'/>
+                <img src={ratingM} className='HomePage_rating' alt='Rating - mature'/>
 
                 <SpriteSheet
                     id={snowCleanerId}
