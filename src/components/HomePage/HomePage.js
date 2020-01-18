@@ -3,7 +3,7 @@ import './HomePage.css';
 import {EPage} from "../MainPage";
 import asNintendoSwitch from "../../assets/logos/nintendo_switch.svg";
 import asSteam from "../../assets/logos/steam.svg";
-import ratingM from "../../assets/rating_mature.png";
+import ratingM from "../../assets/rating_mature.svg";
 import snowCleanerAnimations from '../../assets/snow_cleaner_animations_main.png';
 import SpriteSheet from "../utils/Spritesheet";
 
