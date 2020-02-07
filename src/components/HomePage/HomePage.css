@@ -96,16 +96,31 @@
     padding-bottom: 20px;
 }
 
-.HomePage_release_time {
-    color: #1d3f53 ;
+.HomePage_release_platforms, .HomePage_release_platforms_wrapper, .HomePage_release_platforms_wrapper_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.HomePage_release_platforms_wrapper, .HomePage_release_platforms_wrapper_link {
+    flex-direction: column;
+    color: #1d3f53;
     font-size: 18px;
     font-family: 'SequelNeue', Arial, serif;
     margin-bottom: 15px;
 }
 
+.HomePage_release_platforms_wrapper_link {
+    text-decoration: none;
+    transition: all 200ms ease-in-out 0s;
+    outline: none;
+}
+.HomePage_release_platforms_wrapper_link:hover {
+    color: #d13715;
+}
+
 .HomePage_release_platforms img {
     height: 30px;
     width: auto;
-    margin: 5px 20px;
+    margin: 12px 20px 5px;
     fill: #1d3f53;
 }

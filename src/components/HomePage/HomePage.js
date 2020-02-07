@@ -172,10 +172,17 @@ class HomePage extends React.PureComponent {
                 />
 
                 <section className='HomePage_release_wrapper'>
-                    <div className='HomePage_release_time'>RELEASE JANUARY 30</div>
                     <div className='HomePage_release_platforms'>
-                        <img src={asSteam} alt='Steam platform'/>
-                        <img src={asNintendoSwitch} alt='Nintendo switch platform'/>
+                        <a className='HomePage_release_platforms_wrapper_link' rel="noopener noreferrer"
+                           href="https://store.steampowered.com/app/874040/Ministry_of_Broadcast/" target='_blank'
+                        >
+                            <div>RELEASED</div>
+                            <img src={asSteam} alt='Steam platform'/>
+                        </a>
+                        <div className='HomePage_release_platforms_wrapper'>
+                            <div>APRIL 28</div>
+                            <img src={asNintendoSwitch} alt='Nintendo switch platform'/>
+                        </div>
                     </div>
                 </section>
             </div>

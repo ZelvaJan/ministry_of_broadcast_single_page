@@ -24,6 +24,7 @@ import PressKit from "./PressKit/PressKit";
 import PropTypes from "prop-types";
 import {setBodyScrollBarVisible} from "./utils/Utils";
 import {getURLParameter} from "../App";
+import PressMsg from "./PressMsg/PressMsg";
 
 export const EPage = {
     HomePage: 'HomePage',
@@ -58,7 +59,8 @@ class MainPage extends React.PureComponent {
         super();
 
         let openPressKit = !!getURLParameter("pressKit");
-        if (openPressKit) {
+        let openPressMessage = !!getURLParameter("pressMsg");
+        if (openPressKit || openPressMessage) {
             setBodyScrollBarVisible(false);
         }
 
@@ -69,7 +71,8 @@ class MainPage extends React.PureComponent {
             logoUp: false,
             isTrailerVisible: false,
             isAwardsVisible: false,
-            isPressKitOpen: openPressKit
+            isPressKitOpen: openPressKit,
+            isPressMsgOpen: openPressMessage
         };
 
         this.forceScrollTimer = null;
@@ -196,6 +199,11 @@ class MainPage extends React.PureComponent {
         this.setState({isPressKitOpen: false})
     };
 
+    hidePressMsg = () => {
+        setBodyScrollBarVisible(true);
+        this.setState({isPressMsgOpen: false})
+    };
+
     render() {
         const isVisible = this.props.isLoaded ? 'visible' : 'hidden';
 
@@ -204,7 +212,7 @@ class MainPage extends React.PureComponent {
                 <h1 className='hidden'>Ministry of Broadcast - The Wall Show</h1>
                 <h2 className='hidden'>brought by TwinPetes s.r.o.</h2>
 
-                {this.state.isPressKitOpen
+                {this.state.isPressKitOpen || this.state.isPressMsgOpen
                     ? null
                     : <Logo
                         introEnded={this.state.introEnded}
@@ -213,7 +221,7 @@ class MainPage extends React.PureComponent {
                 }
 
                 {this.state.introEnded
-                    ? !this.state.isPressKitOpen
+                    ? !this.state.isPressKitOpen && !this.state.isPressMsgOpen
                         ? <NavigationBar
                             activePage={this.state.page}
                             changePage={this.changePage}
@@ -300,6 +308,10 @@ class MainPage extends React.PureComponent {
         } else if (this.state.isPressKitOpen) {
             return <PressKit
                 hidePressKit={this.hidePressKit}
+            />
+        } else if (this.state.isPressMsgOpen) {
+            return <PressMsg
+                hidePressMsg={this.hidePressMsg}
             />
         }
     }

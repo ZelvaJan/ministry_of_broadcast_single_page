@@ -108,11 +108,12 @@ class PressKit extends Component {
                                         <div>
                                             <h4>Release Date:</h4>
                                             <p>January 30, 2020</p>
+                                            <p>April 28, 2020</p>
                                         </div>
                                         <div>
                                             <h4>Platforms:</h4>
-                                            <p>Steam</p>
                                             <p>Nintendo Switch</p>
+                                            <p>Steam</p>
                                         </div>
                                         <div>
                                             <h4>Created with:</h4>
@@ -127,7 +128,10 @@ class PressKit extends Component {
                                             <h4>Publisher:</h4>
                                             <p><a href="https://hitcents.com/" target='_blank'
                                                   rel="noopener noreferrer">Hitcents</a>,
-                                                LA, USA</p>
+                                                USA</p>
+                                            <p><a href="https://playism.com/" target='_blank'
+                                                  rel="noopener noreferrer">Playism</a>,
+                                                Japan</p>
                                         </div>
                                     </div>
                                 </div>
