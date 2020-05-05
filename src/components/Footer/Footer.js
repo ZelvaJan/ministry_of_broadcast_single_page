@@ -8,6 +8,8 @@ import asTwitter from '../../assets/logos/Social_Twitter.svg';
 import asTwitterActive from '../../assets/logos/Social_Twitter_active.svg';
 import asSteam from '../../assets/logos/Social_Steam.svg';
 import asSteamActive from '../../assets/logos/Social_Steam_active.svg';
+import asInstagram from '../../assets/logos/Social_Instagram.png';
+import asInstagramActive from '../../assets/logos/Social_Instagram_active.png';
 import PropTypes from "prop-types";
 import {EPage} from "../MainPage";
 
@@ -96,6 +98,12 @@ class Footer extends React.PureComponent {
                                 <img onMouseOver={(e) => this.srcChange(e, asSteamActive)}
                                      onMouseOut={(e) => this.srcChange(e, asSteam)}
                                      className='Footer_steam' src={asSteam} alt='Steam'/>
+                            </a>
+                            <a href="https://www.instagram.com/ofbroadcast/" target='_blank' rel="noopener noreferrer"
+                               className='Footer_social_link'>
+                                <img onMouseOver={(e) => this.srcChange(e, asInstagramActive)}
+                                     onMouseOut={(e) => this.srcChange(e, asInstagram)}
+                                     className='Footer_instagram' src={asInstagram} alt='Instagram'/>
                             </a>
                         </div>
                     </div>

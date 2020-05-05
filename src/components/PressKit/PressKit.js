@@ -216,6 +216,8 @@ class PressKit extends Component {
                                            rel="noopener noreferrer">DevBlog</a>
                                         <a href="https://discord.gg/hitcents" target='_blank'
                                            rel="noopener noreferrer">Discord</a>
+                                        <a href="https://www.instagram.com/ofbroadcast/" target='_blank'
+                                           rel="noopener noreferrer">Instagram</a>
                                     </div>
                                 </div>
                             </div>
