@@ -198,7 +198,7 @@ class PressKit extends Component {
                                     <h3>TRAILER</h3>
                                     <div className='PressKit_trailer_wrapper'>
                                         <iframe className="PressKit_trailer" title='Ministry gameplay trailer'
-                                                src="https://www.youtube.com/embed/G4W-gyLFFB4?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
+                                                src="https://www.youtube.com/embed/EIAOhtAh0sU?modestbranding=1&autoplay=0&controls=1&showinfo=0&disablekb=1"
                                                 frameBorder="0"/>
                                         <div className='PressKit_trailer_overlay'/>
                                     </div>
@@ -210,6 +210,8 @@ class PressKit extends Component {
                                            target='_blank' rel="noopener noreferrer">Steam</a>
                                         <a href="https://twitter.com/OfBroadcast" target='_blank'
                                            rel="noopener noreferrer">Twitter</a>
+                                        <a href="https://twitter.com/crow_caws_caw" target='_blank'
+                                           rel="noopener noreferrer">The Crow</a>
                                         <a href="https://www.facebook.com/TheWallShow/" target='_blank'
                                            rel="noopener noreferrer">Facebook</a>
                                         <a href="https://twinpetes.com/" target='_blank'

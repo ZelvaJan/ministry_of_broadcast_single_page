@@ -58,7 +58,7 @@ class Gallery extends React.PureComponent {
         centerPadding: '80px',
         slidesToScroll: 1,
         adaptHeight: true,
-        lazyLoad: true,
+        lazyLoad: false,
         swipeToSlide: true,
         variableWidth: true,
         accessibility: false,
